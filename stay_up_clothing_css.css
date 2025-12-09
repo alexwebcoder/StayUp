@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap');
+
+/* --------------------- */
+/* GENERAL STYLING */
+/* --------------------- */
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	font-family: 'Roboto', Arial, sans-serif;
+	font-weight: 400;
+	text-align: center;
+	text-decoration: none;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #fff;
+  color: #000;
+  min-height: 100dvh;
+}
+
+a {
+  color: inherit;
+}
+
+/* --------------------- */
+/* HEADER */
+/* --------------------- */
+.site-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #111;
+  color: #fff;
+  flex-wrap: wrap;
+}
+
+.header-left .logo {
+  height: 60px;
+}
+
+.header-center {
+  flex: 1;
+  text-align: center;
+  padding: 0 1rem;
+}
+
+.hero-message {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.header-right ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+  margin: 0;
+  padding: 0;
+}
+
+.header-right li a {
+  color: #fff;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.header-right li a:hover {
+  color: #f39c12;
+}
+
+/* --------------------- */
+/* CAROUSEL */
+/* --------------------- */
+.carousel-section {
+  text-align: center;
+  margin: 2rem 0;
+}
+
+.carousel-title {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.hero__slider {
+  width: 90%; 
+  max-width: 800px;
+  height: 500px;
+  overflow: hidden;
+  margin: 0 auto;
+  border: 3px solid black;
+}
+
+.hero__slides {
+  width: 500%;
+  height: 100%;
+  display: flex;
+   transition: transform 1s ease;
+}
+
+.hero__slides input {
+  display: none;
+}
+
+.hero__btns {
+  position: absolute;
+  width: 50rem;
+  margin-top: 460px;
+  display: flex;
+  justify-content: center;
+}
+
+.hero__slide {
+  width: 20%;
+  height: 100%;
+  transition: 1s ease;
+  display: flex;        /* center image inside the slide */
+  align-items: center;
+  justify-content: center;
+}
+
+.hero__slide img {
+max-width: 100%;
+max-height: 100%;
+ width: auto;
+  height: auto;
+  object-fit: contain; /* shows the whole shirt */
+  display: block;
+}
+
+/*css for automatic navigation*/
+
+.btn__auto {
+  border: 2px solid white;
+  padding: 5px;
+  border-radius: 50%;
+  transition: 1s;
+}
+
+.btn__auto:not(:last-child) {
+  margin-right: 1.5rem;
+}
+
+
+#radio1:checked ~ .hero__btns .auto-btn1 {
+  background: #40d3dc;
+}
+
+#radio2:checked ~ .hero__btns .auto-btn2 {
+  background: #40d3dc;
+}
+
+#radio3:checked ~ .hero__btns .auto-btn3 {
+  background: #40d3dc;
+}
+
+#radio4:checked ~ .hero__btns .auto-btn4 {
+  background: #40d3dc;
+}
+
+ /* Provides the sliding animation -- Do not get rid off! */
+#radio1:checked ~ .slide01 {
+  margin-left: 0;
+}
+
+#radio2:checked ~ .slide01 {
+  margin-left: -20%;
+}
+
+#radio3:checked ~ .slide01 {
+  margin-left: -40%;
+}
+
+#radio4:checked ~ .slide01 {
+  margin-left: -60%;
+}
+
+
+
+
+/* --------------------- */
+/* ADDITIONAL IMAGES */
+/* --------------------- */
+.additional-images {
+  margin: 2rem 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.additional-images img {
+  width: 300px;
+  height: auto;
+  border-radius: 12px;
+}
+
+/* --------------------- */
+/* FOOTER */
+/* --------------------- */
+.site-footer {
+  background-color: #111;
+  color: #fff;
+  text-align: center;
+  padding: 1.5rem 2rem;
+  font-size: 0.9rem;
+}
+
+.site-footer a {
+  color: #f39c12;
+}
+
+/* --------------------- */
+/* RESPONSIVE */
+/* --------------------- */
+@media (max-width: 768px) {
+  .site-header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .header-right ul {
+    flex-direction: column;
+    gap: 0.8rem;
+  }
+
+  .carousel img, .additional-images img {
+    width: 80%;
+    max-width: 300px;
+  }
+}

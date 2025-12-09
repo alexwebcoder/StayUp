@@ -1,0 +1,963 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap');
+
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	font-family: 'Roboto', Arial, sans-serif;
+	font-weight: 400;
+	text-align: center;
+	color: #fff;
+	text-decoration: none;
+}
+
+html, body {
+	height: 100%;
+	min-height: 100%;	
+}
+
+body {
+	background: url(Images/stay_up_clothing_desktop_bg.jpg) no-repeat center center fixed;
+	background-size: cover;
+	display: -webkit-box;  
+	display: -ms-flexbox;  
+	display: -webkit-flex;
+	display: flex;
+	flex-direction: column;
+	letter-spacing: .05em;
+	background-color: #fff;
+	background-position-y: 34px;
+	-webkit-text-size-adjust: 100%;
+}
+
+body.contact-body, body.thank-you-body, body.products-body, body.order-body {
+	background: #fff;
+	margin-top: 95px;
+}
+
+main {
+	min-height: 75px;
+	background: #000;
+	display: -webkit-box;  
+	display: -ms-flexbox;  
+	display: -webkit-flex;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.home-body main {
+	border-bottom: none;
+}
+
+main ul {
+	display: -webkit-box;  
+	display: -ms-flexbox;  
+	display: -webkit-flex;
+	display: flex;
+	list-style-type: none;
+	align-items: center;
+	position: relative;
+	align-self: flex-start;
+	top: 15px;
+}
+
+main ul li {
+	margin-right: 16px;
+	white-space: nowrap;
+}
+
+main li a:hover {
+	text-decoration: underline;
+	color: #f49505
+}
+
+#active {
+	color: dodgerblue;
+	pointer-events: none;
+}
+
+.logo {
+	display: block;
+	padding: 6px 0 6px 0;
+	position: relative;
+    z-index: 1;	
+}
+
+.logo img, .mobile-logo img {
+    max-width: 100%;
+    height: auto;
+    max-height: 92px;
+    transform: rotate(1deg);
+}
+
+.mobile-menu-icon {
+	align-self: center;
+}
+
+.mobile-logo {
+	display: none;
+}
+
+.logo, .mobile-logo {
+	margin-left: 30px;
+}
+
+.logo p, .mobile-logo p {
+	font-size: 11px;
+    letter-spacing: .1em;
+}
+
+.overlay-content h3 {
+	width: 80%;
+    text-align: center;
+    margin: -71px auto 65px auto;
+    margin: -9px auto 22px auto;
+}
+
+header {
+	display: -webkit-box;  
+	display: -ms-flexbox;  
+	display: -webkit-flex;
+	display: flex;
+	flex-grow: 1;
+	flex-direction: column;
+}
+
+h1.desktop {
+	width: 100%;
+	font-size: 27px;
+	align-self: flex-end;
+    padding: 8px;
+	display: block;
+	position: absolute;
+	white-space: nowrap;
+	top: 47px;
+	letter-spacing: .03em;
+}
+
+.portrait-view-statement {
+	display: none;
+}
+
+.home-body .portrait-view-statement.hide {
+	opacity: .08;
+}
+
+.opacity {
+	opacity: 1;
+}
+
+footer {
+	background: rgba(0, 0, 0, .6);
+	height: auto;
+	display: -webkit-box;  
+	display: -ms-flexbox;  
+	display: -webkit-flex;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding: 6px 0;
+	position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+	font-size: 11px;
+}
+
+footer p a{
+	cursor: none;
+}
+
+.mobile-trademark, .mobile-menu-icon, .overlay  {
+	display: none;
+}
+
+/* contact us */
+
+form, .thank-you-container { 
+	max-width: 400px; 
+	margin: 50px auto; 
+	width: 100%;
+}
+
+form h2, .thank-you-body h2 {
+	color: #000;
+    padding: 10px;
+	margin-bottom: 15px;
+	font-weight: 700;
+	border-radius: 5px;
+	font-size: 32px;
+}
+
+.thank-you-container h2:first-child, .contact-h2 {
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.thank-you-container h2:nth-child(2), .stayup-h2 {
+    padding-top: 0;
+}
+
+.thank-you-body main p {
+	color: #000;
+	font-size: 14px;
+}
+
+.envelope {
+	display: block;
+	max-width: 55%;
+	margin: 18px auto;
+}
+
+.feedback-input {
+  color: #000;
+  font-weight: 500;
+  font-size: 18px;
+  border-radius: 5px;
+  line-height: 22px;
+  background-color: transparent;
+  border: 3px solid #000;
+  transition: all 0.3s;
+  padding: 13px;
+  margin-bottom: 15px;
+  width: 100%;
+  box-sizing: border-box;
+  outline: 0;
+}
+
+.feedback-input:focus { 
+	border: 3px solid dodgerblue; 
+}
+
+textarea {
+  height: 150px;
+  line-height: 150%;
+  resize: vertical;
+}
+
+[type="submit"] {
+  width: 100%;
+  background: #000;
+  border-radius: 5px;
+  border: 0;
+  cursor: pointer;
+  color: white;
+  font-size: 24px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  transition: all 0.3s;
+  margin-top: -4px;
+  font-weight: 700;
+}
+
+[type="submit"]:hover { 
+	background: dodgerblue; 
+}
+
+/*
+ about us page*/
+
+ .article-body {
+ 	display: block;
+ }
+
+ .article-body main {
+ 	justify-content: flex-start;
+ }
+
+.article, .article_text, .article_text_link {
+	width: 80%;
+	margin: 35px auto 10px auto;
+}
+
+.article_text, .article_text_link {
+	color:#000;
+	margin-top: 10rem;
+	font-size: 1.5rem;
+}
+
+.article_text_link {
+	margin-top: 5rem;
+	margin-bottom: 5rem;
+}
+
+.article_text_link > a {
+	color: #000;
+}
+
+.article-body footer, .thank-you-body footer, .contact-body footer, .products-body footer, .order-body footer {
+	background: #000;
+}
+
+.article img {
+	display: block;
+    height: auto;
+    max-width: 100%;
+    margin: 30px auto;
+}
+
+.article img:nth-child(n+2) {
+	max-width: 80%;
+}
+
+.article-body {
+	background: #fff;
+}
+
+.article-body:after {
+	background: none;
+}
+
+/* products page */
+
+.t-shirt-container {
+	width: 33%;
+    margin: 50px auto 50px auto;
+	display: flex;
+	flex-direction: column;
+}
+
+.caps {
+	align-self: center;
+	width: 80%;
+}
+
+.t-shirt-container tbody {
+	display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.t-shirt-container form {
+	margin: 10px auto;
+}
+
+.t-shirt-container form:nth-of-type(2) {
+	margin-top: 0;
+}
+
+.t-shirt-container tr {
+	margin-bottom: 10px;
+}
+
+.t-shirt-container img {
+	max-width: 100%;
+    display: block;
+    height: auto;
+}
+
+.products-body select, .products-body td, .product-title, .product-price {
+	color: #000;
+}
+
+.products-body select, .product-price {
+	font-size: 24px;
+}
+
+.products-body td, .product-title {
+	font-size: 28px;
+}
+
+hr.style-two {
+    border: 0;
+    height: 3px;
+    background-image: linear-gradient(to right, rgba(30, 144, 255, 0), rgba(30, 144, 255, 0.75), rgba(30, 144, 255, 0));
+	width: 50%;
+	margin: 0 auto;
+}
+
+.t-shirt-container [type="image"] {
+	transition: all 0.3s; border-radius: 5px;
+    border-top-left-radius: 18px;
+	border-top-right-radius: 18px;
+	border-bottom-left-radius: 18px;
+	border-bottom-right-radius: 18px;
+    -moz-background-clip: padding-box; 
+	-webkit-background-clip: padding-box;
+	background-clip: padding-box;
+}
+
+.t-shirt-container [type="image"]:hover {
+	background: #f49505;
+    -moz-background-clip: padding-box; 
+	-webkit-background-clip: padding-box;
+	background-clip: padding-box;
+}
+
+#order {
+	width: auto;
+	color: #000;
+	font-weight: 600;
+}
+
+.order-received-container {
+	margin: 75px auto;
+	max-width: 70%;
+}
+
+.order-received-container p {
+	color: #000;
+	text-align: justify;
+	width: 80%;
+    margin: auto;
+}
+
+.order-received-container img {
+	max-width: 100%;
+	height: auto;
+	display: block;
+	margin: 15px auto 0 auto;
+}
+
+@media all and (max-width: 1760px) and (min-width: 48em) {
+
+	body {
+		background-position-y: 109px;
+	}
+ }
+
+
+ @media all and (max-width: 1210px) {
+
+	.article img:nth-child(n+2) {
+		max-width: 90%;
+	}
+ }
+
+ @media all and (max-width: 1760px) and (min-width: 1350px) {
+
+	h1.desktop {
+		 font-size: 24px;
+		 right: -121px;
+	}
+ }
+
+ @media all and (max-width: 1349px) and (min-width: 1098px) {
+
+	h1.desktop {
+		 font-size: 20px;
+		 right: -26px;
+		 width: 84%;
+	}
+ 
+ }
+
+ @media all and (max-width: 1400px) and (min-width: 600px) {
+
+	body {
+		 background: url(Images/stay_up_apparel_group_shot.jpg) no-repeat center center fixed;
+	     background-size: contain;
+	     background-position-y: 120.8px;
+	}
+
+	.t-shirt-container {
+		width: 70%;
+	}
+ 
+ }
+
+ @media all and (max-width: 1097px) and (min-width: 48em) {
+
+	body {
+		background-position-y: 106.8px;	
+	}
+
+	.home-body h1.desktop, .article-body h1.desktop, .contact-body h1.desktop, .thank-you-body h1.desktop, .products-body h1.desktop, .order-body h1.desktop {
+		font-size: 14px;
+		right: -11px;
+		width: 76%;
+	}
+
+	.logo img {
+		max-height: 80px;
+	}
+ }
+ 
+ @media (max-width: 600px) {
+	body {
+		background: url(Images/stay_up_clothing_alex_deleon.jpg) no-repeat center center fixed;
+		background-size: contain;
+		background-position-y: 140px;
+	}
+ }
+
+
+@media (max-width: 48em) {
+
+
+	body:after {
+		background: none;
+	}
+
+	body.contact-body, body.thank-you-body, body.products-body, body.order-body {
+		margin-top: 125px;
+	}
+
+	h1.desktop {
+		font-size: 20px;
+		width: 80%;
+		display: none;
+	}
+
+	main, footer {
+		background: #000;
+	}
+
+	main {
+		background: #fff;
+		min-height: 159px;
+		justify-content: flex-end;
+		border-bottom: 1px solid #d3d3d3;
+	}
+
+	main ul {
+		display: none;
+	}
+
+	.logo {
+    	display: none;
+    }
+
+    .mobile-logo {
+		display: block;
+		padding: 4px 0 10px 0;
+		position: absolute;
+		right: 0;
+		left: 0;
+		margin: auto;
+		top: -1px;
+    }
+
+    .mobile-logo img {
+       max-height: 120px;
+   }
+
+   .mobile-logo p {
+	 color: #000;
+	 font-weight: 600;
+	 font-size: 18px;
+	 white-space: nowrap;
+   }
+
+   .mobile-form {
+	 display: block;
+   }
+
+   .desktop-form {
+	 display: none;
+   }
+
+
+   .desktop-trademark {
+	 display: none;
+	}
+
+	.mobile-menu-icon {
+	  display: inline-block;
+	  cursor: pointer;
+	  margin-right: 15px;
+	  position: relative;
+	}
+
+	.mobile-menu-icon span {
+	  font-size: 12px;
+	}
+
+	.bar1, .bar2, .bar3 {
+		width: 39px;
+		height: 9px;
+		background-color: #000;
+		margin: 6px auto;
+		transition: 0.4s;
+	}
+
+	.change .bar1 {
+		-webkit-transform: rotate(-45deg) translate(-3px, 3px);
+		transform: rotate(-45deg) translate(-9px, 8px);
+	}
+
+	.change .bar2 {opacity: 0;}
+
+	.change .bar3 {
+		-webkit-transform: rotate(45deg) translate(-12px, -12px);
+		transform: rotate(45deg) translate(-12px, -12px);
+	}
+
+	.mobile-trademark, .mobile-menu-icon, .overlay  {
+		display: block;
+	}
+
+	.overlay {
+		/* Height & width depends on how you want to reveal the overlay (see JS below) */   
+		height: 0;
+		width: 100%;
+		position: fixed; /* Stay in place */
+		z-index: 1; /* Sit on top */
+		left: 0;
+		top: 159px;
+		background-color: rgb(0,0,0); /* Black fallback color */
+		background-color: rgba(0,0,0, 0.8); /* Black w/opacity */
+		overflow-y: hidden; /* Disable vertical scroll */
+		transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+	}
+
+	/* Position the content inside the overlay */
+	.overlay-content {
+		position: relative;
+		top: 10%; /* 10% from the top */
+		width: 100%; /* 100% width */
+		text-align: center; /* Centered text/links */
+		margin-top: 30px; /* 30px top margin to avoid conflict with the close button on smaller screens */
+	}
+
+	/* The navigation links inside the overlay */
+	.overlay a {
+		text-decoration: none;
+		font-size:16px;
+		display: block; /* Display block instead of inline */
+		transition: 0.3s; /* Transition effects on hover (color) */
+		padding-bottom: 3px;
+		color: #fff;
+		cursor: pointer;
+	}
+
+	/* When you mouse over the navigation links, change their color */
+	.overlay a:hover, .overlay a:focus {
+		text-decoration: underline;
+		color: #f49505;
+	}
+
+	.overlay.height {
+		height: 100%;
+	}
+
+	/*article page*/
+
+	.article {
+		width: 100%;
+		margin-top: 133px;	
+	}
+
+	.article-body {
+		background: white;
+	}
+
+	form, .thank-you-container {
+		max-width: 300px;
+		margin: 50px auto;
+	}
+
+	.t-shirt-container {
+		width: 90%;
+	}
+
+	.products-body select {
+		font-size: 16px;
+	}
+	
+	.products-body td {
+		font-size: 18px;
+	}
+
+	.t-shirt-container [type="image"] {
+		width: 150px;
+	}
+	
+}
+
+@media (max-width: 22.5em) {
+   .mobile-logo p {
+	   font-size: 12px;
+   }
+
+   .mobile-logo img {
+	   max-height: 80px;
+   }
+
+   main {
+	   min-height: 103px;
+   }
+
+   .bar1, .bar2, .bar3 {
+    width: 28px;
+    height: 4px;
+  }
+
+  body {
+	  background-position-y: 103px;
+  }
+
+  body.contact-body, body.thank-you-body {
+	margin-top: 64px;
+  }
+
+  .overlay {
+	  top: 102px;
+  }
+
+  .change .bar1 {
+	transform: rotate(-45deg) translate(-1px, 2px);
+  }
+
+  form, .thank-you-container {
+    max-width: 90%;
+    margin: 50px auto;
+ }
+
+  body.contact-body, body.thank-you-body, body.products-body, body.order-body {
+    margin-top: 72px;
+ }
+
+ .article {
+	 margin-top: 83px;
+ }
+
+}
+
+
+@media (max-height: 390px) {
+
+	.logo img, .mobile-logo img {
+		max-height: 80px;
+	}
+
+    .home-body {
+		background-position-y: 65px;
+        background-size: contain;
+	}
+
+	h1 {
+		font-size: 18px;
+		font-weight: 400;
+	}
+
+    footer {
+		min-height: 30px;
+	}
+
+	footer p {
+		font-size: 9px;
+	}
+
+	 ul li a {
+		font-size: 12px;
+	}
+
+	.mobile-logo p {
+		font-size: 11px;
+	}
+
+    .overlay-content {
+		margin-top:0;
+	}
+
+	 .overlay-content a {
+		display: inline-block;
+		margin-right: 10px;
+	}
+
+	 .overlay-content a:last-child {
+		margin-right: 0;
+	}
+
+	.overlay {
+		top: 103px;
+	}
+
+	.bar1, .bar2, .bar3 {
+		width: 23px;
+		height: 3px;
+	  }
+
+
+	.change .bar1 {
+		-webkit-transform: rotate(-45deg) translate(0px, -1px);
+		transform: rotate(-45deg) translate(0px, -1px);
+	}
+
+	.change .bar3 {
+		-webkit-transform: rotate(45deg) translate(-13px, -12px);
+		transform: rotate(45deg) translate(-13px, -12px);
+	}
+
+	body.contact-body, body.thank-you-body, body.products-body, body.order-body {
+		margin-top: 56px;
+	}
+
+}
+
+
+@media all and (max-width: 48em) and (max-height: 390px) {
+	 main {
+		height: 103px;
+		min-height: auto;
+	}
+
+	.article {
+		margin-top: 91px;
+	}
+
+}
+
+@media all and (max-width: 1075px) and (min-width: 568px) and (max-height: 600px) and (min-height: 200px){
+	.home-body h1.desktop {
+		display: none;
+	}
+
+	.article-body h1.desktop, .contact-body h1.desktop, .thank-you-body h1.desktop, .products-body h1.desktop, .order-body h1.desktop {
+		top: 32px;
+	}
+
+	main {
+		min-height: auto;
+		background: #000;
+		justify-content: space-between;
+		height: 65px;
+		border-bottom: none;
+	}
+
+	main ul {
+		font-size: 14px;
+	}
+
+	 .logo img, .mobile-logo img {
+		max-height: 58px;
+	}
+
+	.logo img {
+		display: block;
+		float: left;
+	}
+
+	body {
+	  background-position-y: 34.8px;
+	  background-position-x: left;
+	  background-size:48%;
+	}
+
+	.logo {
+		display: block;
+	}
+
+	.logo p {
+		white-space: nowrap;
+		top: 12px;
+        position: relative;
+        left: 17px;
+	}
+
+	.mobile-logo {
+		display: none;
+	}
+
+	.home-body .portrait-view-statement {
+		display: block;
+		color: #000;
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		right: 8px;
+		margin: auto;
+		height: 22px;
+		width: 47%;
+		font-size: 22px;
+		text-align: left;
+		font-weight: 700;
+		letter-spacing: .02em;
+	}
+	 
+	.overlay {
+		top: 63px;
+	}
+	
+	.bar1, .bar2, .bar3 {
+		width: 28px;
+		height: 4px;
+		background-color: #fff;
+	}
+
+	.change .bar1 {
+		-webkit-transform: rotate(-45deg) translate(-3px, 1px);
+		transform: rotate(-45deg) translate(-3px, 1px);
+	}
+
+	.article {
+		margin-top: 51px;
+	}
+
+	body.contact-body, body.thank-you-body, body.products-body, body.order-body {
+		background: #fff;
+		margin-top: 21px;
+	}
+
+}
+
+@media all and (max-width: 853px) and (min-width: 768px) and (max-height: 1281px) and (min-height: 1279px) {
+     body {
+		background-position-y: 60%;
+	 }
+}
+
+
+/* iphone x */
+@media all and (max-width: 1075px) and (min-width: 811px) and (max-height: 389px) and (min-height: 306px){
+	.home-body .portrait-view-statement {
+		right: 7%
+	}
+}
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    /*IE10+ CSS here*/
+
+    .mobile-logo, .logo, .mobile-menu-icon, main ul {
+    	padding-top:5px;
+	}
+
+
+    .mobile-logo {
+		margin-left:0;
+		width:100%;
+		top: 0;
+	}
+
+	.mobile-menu-icon {
+		position: absolute;
+		top: 0;
+		right: 0;
+	}
+
+	h1.desktop {
+		position: absolute;
+		right: 0;
+		font-size: 18px;
+	}
+
+	.t-shirt-container, .article-body main {
+		display: block;
+	}
+
+	.t-shirt-container {
+		height: 900px;
+	}
+
+	.logo {
+		top: 4px;
+	}
+}
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) and (max-height: 390px) {
+	 #ie-specificity {
+		top: 67px;
+	}
+}
+
+

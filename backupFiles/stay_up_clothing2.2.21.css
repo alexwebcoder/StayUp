@@ -1,0 +1,680 @@
+/* @import url('https://fonts.googleapis.com/css?family=Sawarabi+Gothic&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap');
+
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	font-family: 'Roboto', Arial, sans-serif;
+	font-weight: 400;
+	text-align: center;
+	color:#fff;
+	text-decoration: none;
+}
+
+html, body {
+	height: 100%;
+	min-height: 100%;
+	
+}
+
+body {
+	background: url(Images/stay_up_clothing.jpg) no-repeat center center fixed;
+	background-size: cover;
+	display: -webkit-box;  
+	display: -ms-flexbox;  
+	display: -webkit-flex;
+	display: flex;
+	flex-direction: column;
+	letter-spacing: .05em;
+	background-color: #fff;
+	background-position-y: 34px;
+}
+
+header {
+	min-height: 75px;
+	background: #000;
+	display: -webkit-box;  
+	display: -ms-flexbox;  
+	display: -webkit-flex;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+header ul {
+	display: -webkit-box;  
+	display: -ms-flexbox;  
+	display: -webkit-flex;
+	display: flex;
+	list-style-type: none;
+	align-items: center;
+	margin-right: 30px;
+	position: relative;
+
+}
+
+header ul li {
+
+	margin-right: 16px;
+	white-space: nowrap;
+}
+
+header li a:hover {
+	text-decoration: underline;
+}
+
+
+.logo {
+	display: block;
+	padding: 10px 0 4px 0;	
+}
+
+.logo img, .mobile_logo img {
+    max-width: 100%;
+    height: auto;
+    max-height: 92px;
+    transform: rotate(1deg);
+}
+
+.mobile_logo {
+	display: none;
+}
+
+.logo, .mobile_logo {
+	margin-left: 30px;
+}
+
+.logo p, .mobile_logo p {
+	font-size: 11px;
+    letter-spacing: .1em;
+}
+
+.overlay-content h3 {
+	width: 80%;
+    text-align: center;
+    margin: -71px auto 65px auto;
+    margin: -9px auto 22px auto;
+}
+
+main {
+	display: -webkit-box;  
+	display: -ms-flexbox;  
+	display: -webkit-flex;
+	display: flex;
+	flex-grow: 1;
+	flex-direction: column;
+	/* position: relative; */
+}
+
+h1.desktop {
+	width: 100%;
+	font-size: 32px;
+	align-self: flex-end;
+    padding: 8px;
+	display: block;
+	position: absolute;
+	white-space: nowrap;
+	top: 36px;
+	letter-spacing: .03em;
+}
+
+.portrait_view_statement {
+	display: none;
+}
+
+footer {
+	background: rgba(0, 0, 0, .6);
+	min-height: 67px;
+	display: -webkit-box;  
+	display: -ms-flexbox;  
+	display: -webkit-flex;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+
+footer p {
+	font-size: 11px;
+}
+
+.mobile_trademark, .mobile_menu_icon, .overlay  {
+	display: none;
+}
+/*
+ about us page*/
+
+ .stay_up_article_body {
+ 	display: block;
+ }
+
+ .stay_up_article_body main {
+ 	justify-content: flex-start;
+ }
+
+.article {
+	width: 80%;
+	margin: 133px auto;
+}
+
+.article img {
+	display: block;
+    height: auto;
+    max-width: 100%;
+    margin: 30px auto;
+}
+
+.article img:nth-child(n+2) {
+	max-width: 80%;
+}
+
+/*body.make_scroll {
+   height: 180%;
+}
+
+body.make_scroll:after {
+   min-height: 180%;
+}*/
+
+.stay_up_article_body{
+	background: #fff;
+}
+
+.stay_up_article_body:after {
+	background: none;
+}
+
+@media all and (max-width: 2195px) {
+
+	h1.desktop {
+		top: unset;
+	}
+
+	header ul {
+		align-self: flex-start;
+		top: 22px;
+	}
+ 
+ }
+
+@media all and (max-width: 1760px) and (min-width: 48em) {
+
+	.logo {
+		 position: relative;
+		 top:-24px;
+	}
+
+	header {
+		min-height: 166.4px;
+	}
+
+	body {
+		background-position-y: 109px;
+	}
+ 
+ }
+
+ @media all and (max-width: 1327px) and (min-width: 1024px) {
+
+	h1.desktop {
+		 font-size: 25px;
+	}
+ 
+ }
+
+ @media all and (max-width: 1210px) {
+
+	.article img:nth-child(n+2) {
+		max-width: 90%;
+	}
+ 
+ }
+
+ @media all and (max-width: 1024px) and (min-width: 48em) {
+
+	h1.desktop {
+		 font-size: 18px;
+	}
+ 
+ }
+
+
+@media all and (max-width: 1400px) and (min-width: 769px) {
+
+	body {
+		 background: url(Images/stay_up_apparel.jpg) no-repeat center center fixed;
+	     background-size: contain;
+	     background-position-y: 165.8px;
+	}
+
+	header {
+		background: #000;
+	}
+ 
+ }
+
+
+
+@media (max-width: 48em) {
+
+	body {
+		background: url(Images/stay_up_clothing_alex_deleon.jpg) no-repeat center center fixed;
+		background-size: cover;
+		background-position-y: 160px;
+        /* background-position-x: right; */
+	}
+
+	body:after {
+		background: none;
+	}
+
+	h1.desktop {
+		font-size: 20px;
+		width: 80%;
+		display: none;
+	}
+
+	header, footer {
+		background: #000;
+
+	}
+
+	header {
+		align-items:unset;
+		background: #fff;
+		min-height: 159px;
+		justify-content: flex-end;
+	}
+
+	header ul {
+		display: none;
+	}
+
+	footer {
+		min-height: 35px;
+	}
+
+	.logo {
+    	display: none;
+    }
+
+    .mobile_logo {
+		display: block;
+		padding: 4px 0 10px 0;
+		position: absolute;
+		right: 0;
+		left: 0;
+		margin: auto;
+    }
+
+    .mobile_logo img {
+       max-height: 120px;
+}
+
+.mobile_logo p {
+	color: #000;
+	font-weight: 600;
+	font-size: 20px;
+	white-space: nowrap;
+}
+
+	.desktop_trademark {
+		display: none;
+	}
+
+	.mobile_menu_icon {
+		display: inline-block;
+		cursor: pointer;
+		margin-right: 15px;
+		margin-top: 22px;
+		position: relative;
+	}
+
+	.mobile_menu_icon span {
+		font-size: 12px;
+	}
+
+	.bar1, .bar2, .bar3 {
+		width: 39px;
+		height: 9px;
+		background-color: #000;
+		margin: 6px auto;
+		transition: 0.4s;
+	}
+
+	.change .bar1 {
+		-webkit-transform: rotate(-45deg) translate(-3px, 3px);
+		transform: rotate(-45deg) translate(-9px, 8px);
+	}
+
+	.change .bar2 {opacity: 0;}
+
+	.change .bar3 {
+		-webkit-transform: rotate(45deg) translate(-12px, -12px);
+		transform: rotate(45deg) translate(-12px, -12px);
+	}
+
+	.mobile_trademark, .mobile_menu_icon, .overlay  {
+		display: block;
+	}
+
+
+	.overlay {
+		/* Height & width depends on how you want to reveal the overlay (see JS below) */   
+		height: 0;
+		width: 100%;
+		position: fixed; /* Stay in place */
+		z-index: 1; /* Sit on top */
+		left: 0;
+		top: 160px;
+		background-color: rgb(0,0,0); /* Black fallback color */
+		background-color: rgba(0,0,0, 0.8); /* Black w/opacity */
+		overflow-y: hidden; /* Disable vertical scroll */
+		transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+	}
+
+	/* Position the content inside the overlay */
+	.overlay-content {
+		position: relative;
+		top: 10%; /* 10% from the top */
+		width: 100%; /* 100% width */
+		text-align: center; /* Centered text/links */
+		margin-top: 30px; /* 30px top margin to avoid conflict with the close button on smaller screens */
+	}
+
+	/*.overlay-content.raise-content {
+		margin-top:0;
+	}
+
+	.overlay-content a.raise-content {
+		display: inline-block;
+		margin-right: 10px;
+	}
+
+	.overlay-content a:last-child.raise-content {
+		margin-right: 0;
+	}*/
+
+	/* The navigation links inside the overlay */
+	.overlay a {
+		text-decoration: underline;
+		font-size:16px;
+		display: block; /* Display block instead of inline */
+		transition: 0.3s; /* Transition effects on hover (color) */
+		padding-bottom: 3px;
+		color:dodgerblue;
+	}
+
+	/* When you mouse over the navigation links, change their color */
+	.overlay a:hover, .overlay a:focus {
+		text-decoration: none;
+		color:white;
+	}
+
+
+	.overlay.height {
+
+		height: 100%;
+	}
+
+
+	/*article page*/
+
+	.article {
+		width: 100%;
+		margin:89px auto 10px auto;
+		
+	}
+
+	.stay_up_article_body {
+		background:white;
+	}
+	
+}
+
+@media (max-width: 22.5em) {
+   .mobile_logo p {
+	   font-size: 12px;
+   }
+
+   .mobile_logo img {
+	   max-height: 69px;
+   }
+
+   header {
+	   min-height: 97px;
+   }
+
+   .bar1, .bar2, .bar3 {
+    width: 28px;
+    height: 4px;
+  }
+
+  .mobile_menu_icon {
+	  margin-top: 0;
+  }
+
+  body {
+	  background-position-y: 102px;
+  }
+
+  .overlay {
+	  top: 102px;
+  }
+
+  .change .bar1 {
+	transform: rotate(-45deg) translate(-1px, 2px);
+  }
+}
+
+
+@media (max-height: 390px) {
+
+	.home_body .logo img, .home_body .mobile_logo img {
+		max-height: 60px;
+	}
+
+	.home_body header {
+		height: 110px;
+		min-height: auto;
+	}
+    .home_body {
+		background-position-y: 82px;
+        background-size: contain;
+	}
+
+	.home_body h1 {
+		font-size: 18px;
+		font-weight: 400;
+	}
+
+	.home_body .logo {
+        top: -15px;
+	}
+
+	.home_body footer {
+		min-height: 30px;
+	}
+
+	.home_body footer p {
+		font-size: 9px;
+	}
+
+	.home_body ul li a {
+		font-size: 12px;
+	}
+
+	.home_body header ul {
+		margin-right: 0;
+	}
+
+	.logo p {
+	  position: absolute;
+      top: 37px;
+	  /* left: 108px; */
+	  left: 129px;
+      white-space: nowrap;
+	}
+
+	.mobile_logo p {
+		font-size: 11px;
+	}
+
+	.home_body .overlay-content {
+		margin-top:0;
+	}
+
+	.home_body .overlay-content a {
+		display: inline-block;
+		margin-right: 10px;
+	}
+
+	.home_body .overlay-content a:last-child {
+		margin-right: 0;
+	}
+
+	.home_body .overlay {
+		top: 90px;
+	}
+
+	.bar1, .bar2, .bar3 {
+		width: 23px;
+		height: 3px;
+	  }
+
+	.mobile_menu_icon {
+		margin-top: -7px;
+	}  
+
+	.change .bar1 {
+		-webkit-transform: rotate(-45deg) translate(0px, -1px);
+		transform: rotate(-45deg) translate(0px, -1px);
+	}
+
+	.change .bar3 {
+		-webkit-transform: rotate(45deg) translate(-14px, -12px);
+		transform: rotate(45deg) translate(-14px, -12px);
+	}
+
+}
+
+
+@media all and (max-width: 48em) and (max-height: 390px) {
+	.home_body header {
+		height: 90px;
+	}
+
+}
+ /* added on 2/1/22 */
+@media all and (max-width: 1024px) and (min-width: 634px) and (max-height: 600px) and (min-height: 375px){
+	h1.desktop {
+		/* white-space: unset;
+		top: 266%;
+		color: #000;
+		right: 0;
+		width: 42%;
+		text-align: left;
+		font-weight: 700;
+		font-size: 24px; */
+		display: none;
+	}
+
+	.home_body header {
+		min-height: auto;
+		height: 99px;
+	}
+
+	.home_body .logo img, .home_body .mobile_logo img {
+		max-height: 71px;
+	}
+
+	body {
+	  background-position-y: 98.8px;
+	  background-position-x: left;
+	  background-size: contain;
+	}
+
+	.home_body .logo {
+		top: -6px;
+	}
+
+	.home_body .portrait_view_statement {
+		display: block;
+    color: #000;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    height: 22px;
+	width: 50%;
+	font-size: 22px;
+	text-align: left;
+	}
+	 
+	.overlay {
+		top: 98.7px;
+	}
+	
+	.bar1, .bar2, .bar3 {
+		width: 28px;
+		height: 4px;
+	}
+
+	.change .bar1 {
+		-webkit-transform: rotate(-45deg) translate(-3px, 3px);
+		transform: rotate(-45deg) translate(-3px, 3px);
+	}
+
+}
+
+@media all and (max-width: 853px) and (min-width: 768px) and (max-height: 1281px) and (min-height: 1280px){
+     body {
+		background-size: cover;
+	 }
+}
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    /*IE10+ CSS here*/
+
+    .mobile_logo, .logo, .mobile_menu_icon, header ul {
+    	padding-top:5px;
+	}
+
+
+    .mobile_logo {
+		margin-left:0;
+		width:100%;
+		top: 0;
+	}
+
+	h1.desktop {
+		position: absolute;
+		left: 0;
+		right: 0;
+		font-size: 18px;
+		top: 113px;
+	}
+
+	.logo img {
+		max-height: 72px;
+	}
+
+	.logo {
+		top: 4px;
+	}
+}
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) and (max-height: 390px) {
+	 #ie_specificity {
+		top: 67px;
+	}
+}
+
+
