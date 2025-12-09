@@ -537,6 +537,18 @@ h3.lookbook__title {
   font-size: 0.9rem;
 }
 
+.site-footer .footer-graphic {
+  max-width: 1200px;
+  margin: 0 auto 1rem;
+}
+
+.site-footer .footer-graphic img {
+  width: 100%;
+  height: auto;
+  max-width: 1200px;
+}
+
+
 .site-footer p {
   line-height: 1.5;
 }
