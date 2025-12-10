@@ -184,7 +184,7 @@ a {
 
 .slider {
  width: 100%;
-  max-width: 600px;
+  max-width: 747px;
   aspect-ratio: 1 / 1;
   overflow: hidden;
   position: relative;
@@ -558,9 +558,9 @@ h3.lookbook__title {
 }
 
 .site-footer .footer-graphic img {
-  width: 100%;
+  display: block;
   height: auto;
-  max-width: 1200px;
+  max-width: 100%;
 }
 
 
