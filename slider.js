@@ -43,7 +43,7 @@ function handleSwipe() {
 if (window.innerWidth > 768) {
   setInterval(() => {
     showSlide(index + 1);
-  }, 2000); // change 3000 to adjust speed (ms)
+  }, 4000); // change 3000 to adjust speed (ms)
 }
 
 
