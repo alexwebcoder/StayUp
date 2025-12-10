@@ -184,7 +184,7 @@ a {
 
 .slider {
  width: 100%;
-  max-width: 747px;
+  max-width: 625px;
   aspect-ratio: 1 / 1;
   overflow: hidden;
   position: relative;
