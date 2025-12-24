@@ -1,0 +1,13 @@
+### HTTPS REDIRECT CODE START
+### DO NOT REMOVE, MUST BE FIRST DIRECTIVE IN .htaccess
+RewriteEngine On
+RewriteCond %{HTTPS} !=on
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301,NE]
+Header always set Content-Security-Policy "upgrade-insecure-requests;"
+### HTTPS REDIRECT CODE END
+
+### SITEMAP CONTENT-TYPE FIX FOR GOOGLE
+<Files "sitemap.xml">
+    ForceType application/xml
+    Header set Content-Type "application/xml"
+</Files>
