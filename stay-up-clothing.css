@@ -258,6 +258,35 @@ a {
   font-size: 1.25rem;
 }
 
+/* bold collection */
+
+.bold-collection .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+.shirt-grid {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+
+.shirt-item img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 8px; /* optional, subtle styling */
+}
+
+@media (min-width: 900px) {
+  .shirt-grid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: auto;
+  }
+}
+
+
 /* banner video */
 
 .banner-section {
@@ -811,6 +840,10 @@ h3.lookbook__title {
   }
   h2, h3 {
     font-size: 1.625rem;
+  }
+  .shirt-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
   }
 }
 
