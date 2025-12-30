@@ -249,13 +249,13 @@ a {
   color: #fff;
   text-transform: uppercase;
   font-weight: 600;
-  padding: 12px 28px;
+   padding: 44px 128px;
   border-radius: 6px;
   letter-spacing: 1px;
   text-decoration: none;
   transition: background 0.3s ease, transform 0.2s ease;
   margin: 2rem 0;
-  font-size: 1.25rem;
+   font-size: 2rem;
 }
 
 /* bold collection */
@@ -309,6 +309,7 @@ a {
   height: auto;
   display: block;
   margin: 0 auto;
+  border-radius: 8px;
 }
 
 
@@ -750,6 +751,12 @@ h3.lookbook__title {
     padding: 0 1rem;
   }
 
+  .shop-now-btn, .btn--secondary {
+     padding: 12px 28px;
+    font-size: 1.25rem;
+    width: 90%;
+  }
+
   .header-center {
     display: none;
   }
@@ -809,6 +816,10 @@ h3.lookbook__title {
 
  .email-form .success-message.show {
     top: 117px;
+  }
+
+  .seo-text, .about-text {
+    padding-top: 1.75rem;
   }
 
   .about-text {
