@@ -261,7 +261,6 @@ a {
 /* bold collection */
 
 .bold-collection {
-  /* background-color: #000; */
   background-image:
    linear-gradient(to right, #f0f0f0 1px, transparent 1px),
    linear-gradient(to bottom, #f0f0f0 1px, transparent 1px);
@@ -281,19 +280,39 @@ a {
  grid-template-columns: repeat(3, 1fr);
 }
 
+.shirt-link {
+  position: relative;
+  display: inline-block;
+}
+
+.shirt-item a::after {
+  content: "View on Etsy";
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-8px);
+  background: rgba(0, 0, 0, 0.85);
+  color: #fff;
+  font-size: 0.75rem;
+  padding: 6px 10px;
+  border-radius: 4px;
+  white-space: nowrap;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.shirt-item a:hover::after {
+  opacity: 1;
+  transform: translateX(-50%) translateY(-12px);
+}
+
 .shirt-item img {
   height: auto;
   display: block;
   border-radius: 8px;
   max-width: 100%;
   box-shadow: 0 6px 18px rgba(0, 0, 0, 0.35);
-}
-
-@media (min-width: 900px) {
-  /* .shirt-grid {
-    grid-template-columns: repeat(2, 1fr);
-    grid-auto-rows: auto;
-  } */
 }
 
 
@@ -718,6 +737,13 @@ h3.lookbook__title {
 /* RESPONSIVE */
 /* --------------------- */
 
+@media (max-width: 960px) {
+  .shirt-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+
 @media (max-width: 900px) {
   .lookbook__grid {
     column-count: 2;
@@ -854,15 +880,15 @@ h3.lookbook__title {
     column-count: 1;
   }
 
+  .shirt-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
   body {
     font-size: 1rem;
   }
   h2, h3 {
     font-size: 1.625rem;
-  }
-  .shirt-grid {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 1rem;
   }
 }
 
