@@ -20,6 +20,10 @@ body {
   font-size: 1.125rem;
 }
 
+h1 {
+  font-weight: 600;
+}
+
 h2, h3 {
   font-size: 1.875rem;
   font-weight: 600;
