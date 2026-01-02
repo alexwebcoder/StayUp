@@ -284,10 +284,18 @@ a {
  grid-template-columns: repeat(3, 1fr);
 }
 
-.shirt-link {
+
+.shirt-item {
+  padding-top: calc(2000 / 2000 * 100%);
   position: relative;
-  display: inline-block;
 }
+
+.shirt-link {
+  display: block;
+  position: absolute;
+  top:0;
+}
+
 
 .shirt-item a::after {
   content: "View on Etsy";
