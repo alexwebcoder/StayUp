@@ -317,6 +317,11 @@ a {
   border-radius: 8px;
   max-width: 100%;
   box-shadow: 0 6px 18px rgba(0, 0, 0, 0.35);
+  transition: box-shadow 0.25s ease;
+}
+
+.shirt-item img:hover {
+  box-shadow: 0 8px 22px rgba(168, 139, 255, 0.45);
 }
 
 
@@ -380,7 +385,16 @@ a {
   transform: translateY(-2px);
 }
 
+.share-icon {
+  filter: invert(1);
+  width: 28px;
+  height: 28px;
+}
 
+.share-button-lower {
+  display: block;
+  padding-top: 1.5rem;
+}
 
 /* Masonry Collage */
 
@@ -875,6 +889,10 @@ h3.lookbook__title {
   .video-figure {
   width: 79%;
   aspect-ratio: 16 / 9;
+}
+.share-icon-lower {
+  width: 50px;
+  height: 50px;
 }
 
 }
