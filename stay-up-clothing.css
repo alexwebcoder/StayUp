@@ -324,8 +324,8 @@ a {
   display: block;
   border-radius: 8px;
   max-width: 100%;
-  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.35);
   transition: box-shadow 0.25s ease;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.35);
 }
 
 .shirt-item img:hover {
@@ -400,8 +400,13 @@ a {
 }
 
 .share-button-lower {
-  display: block;
+  display: inline-block;
   padding-top: 1.5rem;
+}
+
+.share-icon:hover, .share-icon-lower:hover {
+  filter: invert(52%) sepia(87%) saturate(7490%) hue-rotate(1deg) brightness(97%) contrast(92%);
+  cursor: pointer;
 }
 
 /* Masonry Collage */
@@ -656,21 +661,24 @@ h3.lookbook__title {
   background-color: #000;
   color: #fff;
   text-align: center;
-  padding: 1.5rem 2rem;
+  padding: 2rem 2rem;
   font-size: 0.9rem;
 }
 
 .site-footer .footer-graphic {
   max-width: 1200px;
   margin: 0 auto 1rem;
+  position: relative;
+  padding-top:  calc(102 / 1200 * 100%);
 }
 
 .site-footer .footer-graphic img {
   display: block;
   height: auto;
   max-width: 100%;
+  position: absolute;
+  top: 0;
 }
-
 
 .site-footer p {
   line-height: 1.5;
@@ -682,7 +690,7 @@ h3.lookbook__title {
   background-color: #260326;
   color: #fff;
   text-align: center;
-  padding: 3rem 1rem;
+  padding: 2rem 1rem;
 }
 
 .email-banner h2 {
