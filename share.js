@@ -21,7 +21,8 @@ document.addEventListener("DOMContentLoaded", function () {
                     console.log("Error sharing:", error);
                 }
             } else {
-                alert("Sharing not supported on this browser.");
+                navigator.clipboard.writeText(window.location.href);
+                alert("Link copied. Share it anywhere.");
             }
 
             isSharing = false; // Reset state after sharing
