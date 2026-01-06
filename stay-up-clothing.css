@@ -300,8 +300,8 @@ a {
 .shirt-item a::after {
   content: "View on Etsy";
   position: absolute;
-  bottom: 100%;
-  left: 50%;
+  top: 0;
+  left: 13%;
   transform: translateX(-50%) translateY(-8px);
   background: rgba(0, 0, 0, 0.85);
   color: #fff;
@@ -340,13 +340,13 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding: 10px;
 }
 
 .video-figure {
- width: 38%;
   aspect-ratio: 16 / 9;
+  width: 48%;
+  display: flex;
 }
 
 .banner-video {
@@ -672,16 +672,13 @@ h3.lookbook__title {
 .site-footer .footer-graphic {
   max-width: 1200px;
   margin: 0 auto 1rem;
-  position: relative;
-  padding-top:  calc(102 / 1200 * 100%);
+  aspect-ratio: 40/7;
 }
 
 .site-footer .footer-graphic img {
   display: block;
   height: auto;
   max-width: 100%;
-  position: absolute;
-  top: 0;
 }
 
 .site-footer p {
@@ -774,6 +771,12 @@ h3.lookbook__title {
 /* --------------------- */
 /* RESPONSIVE */
 /* --------------------- */
+@media (max-width: 1360px) {
+   .video-figure {
+  width: 100%;
+}
+}
+
 
 @media (max-width: 960px) {
   .shirt-grid {
@@ -847,14 +850,14 @@ h3.lookbook__title {
   }
 
   .header-right ul {
-    flex-direction: row; /* make links horizontal */
-    justify-content: center; /* center links */
-    gap: 1rem; /* space between links */
-    width: 100%; /* take full width */
+    flex-direction: row;
+    justify-content: center;
+    gap: 1rem;
+    width: 100%;
   }
 
   .hero-message-mobile {
-    display: block; /* show on mobile */
+    display: block;
     text-align: center;
     margin: 1rem auto;
     font-size: 1rem;
@@ -874,7 +877,7 @@ h3.lookbook__title {
   }
 
   .email-banner {
-    padding: 2rem 1rem;
+    padding: 1rem;
   }
 
   .email-banner h2 {
@@ -906,10 +909,6 @@ h3.lookbook__title {
   width: 90%;
   }
 
-  .video-figure {
-  width: 79%;
-  aspect-ratio: 16 / 9;
-}
 .share-icon-lower {
   width: 50px;
   height: 50px;
@@ -938,7 +937,7 @@ h3.lookbook__title {
 @media (min-width: 769px) {
   .prev:hover,
   .next:hover {
-    background-color: #95adc6; /* soft blue-gray */
+    background-color: #95adc6;
   }
 
   .shop-now-bottom {
