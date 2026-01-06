@@ -1,13 +1,8 @@
-### HTTPS REDIRECT CODE START
-### DO NOT REMOVE, MUST BE FIRST DIRECTIVE IN .htaccess
+### CANONICAL HTTPS + NON-WWW REDIRECT
 RewriteEngine On
-RewriteCond %{HTTPS} !=on
-RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301,NE]
-Header always set Content-Security-Policy "upgrade-insecure-requests;"
-### HTTPS REDIRECT CODE END
 
-### SITEMAP CONTENT-TYPE FIX FOR GOOGLE
-<Files "sitemap.xml">
-    ForceType application/xml
-    Header set Content-Type "application/xml"
-</Files>
+RewriteCond %{HTTPS} !=on [OR]
+RewriteCond %{HTTP_HOST} ^www\.stayup\.com$ [NC]
+RewriteRule ^(.*)$ https://stayup.com/$1 [L,R=301]
+
+Header always set Content-Security-Policy "upgrade-insecure-requests;"
