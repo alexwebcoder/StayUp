@@ -21,5 +21,12 @@
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
+  
+  <url>
+    <loc>https://stayup.com/artwork.html</loc>
+    <lastmod>2025-12-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
 
 </urlset>
