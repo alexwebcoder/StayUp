@@ -352,7 +352,7 @@ a {
 }
 
 .zoom-video .banner-video {
-  border: 2px solid #fff;
+  max-width: none;
 }
 
 .banner-video {
