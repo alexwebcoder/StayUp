@@ -22,6 +22,7 @@ body {
 
 h1 {
   font-weight: 600;
+  padding: 1rem 0;
 }
 
 h2, h3 {
@@ -297,7 +298,7 @@ a {
 }
 
 
-.shirt-item a::after {
+.shirt-item a::after, .zoom-video a::after {
   content: "View on Etsy";
   position: absolute;
   top: 0;
@@ -314,7 +315,7 @@ a {
   transition: opacity 0.2s ease, transform 0.2s ease;
 }
 
-.shirt-item a:hover::after {
+.shirt-item a:hover::after, .zoom-video a:hover::after {
   opacity: 1;
   transform: translateX(-50%) translateY(-12px);
 }
@@ -340,13 +341,18 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 10px;
+  padding: 2rem;
 }
 
 .video-figure {
   aspect-ratio: 16 / 9;
   width: 48%;
   display: flex;
+  position: relative;
+}
+
+.zoom-video .banner-video {
+  border: 2px solid #fff;
 }
 
 .banner-video {
@@ -804,6 +810,10 @@ h3.lookbook__title {
     top: 0;
     z-index: 1000;
     transition: all 0.3s ease;
+  }
+
+  .banner-section {
+    padding: 1rem;
   }
 
   .site-header.scrolled .logo {
