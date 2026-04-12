@@ -1,0 +1,85 @@
+.baseball-portrait-collection {
+  background-image:
+   linear-gradient(to right, #f0f0f0 1px, transparent 1px),
+   linear-gradient(to bottom, #f0f0f0 1px, transparent 1px);
+  background-size: 20px 20px;
+  text-align: center;
+}
+
+.baseball-portrait-collection .container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+.art-medium {
+  font-size: 1rem;
+  color: #555;
+  margin-top: 0.25em;
+}
+
+.scribble-art-grid {
+  display: grid;
+  gap: 2rem;
+ grid-template-columns: repeat(3, 1fr);
+ margin-top: 9px;
+}
+
+
+.baseball-art-item {
+  padding-top: calc(2000 / 2000 * 100%);
+  position: relative;
+}
+
+.baseball-art-item  figcaption {
+    margin-top: 8px;
+}
+
+.baseball-art-link {
+  display: block;
+  position: absolute;
+  top:0;
+}
+
+.baseball-art-item  a:hover::after  {
+  opacity: 1;
+  transform: translateX(-50%) translateY(-12px);
+}
+
+.baseball-art-item  img {
+  height: auto;
+  display: block;
+  border-radius: 8px;
+  max-width: 100%;
+  transition: transform 0.3s ease-out, box-shadow 0.25s ease;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.35);
+}
+
+.baseball-art-item  img:hover {
+   transform: scale(1.05);
+  box-shadow: 0 8px 22px rgba(168, 139, 255, 0.45);
+}
+
+
+@media (max-width: 960px) {
+  .scribble-art-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .baseball-portrait-collection .container {
+   padding: 1rem;
+  }
+}
+
+@media (max-width: 600px) {
+
+  .scribble-art-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .baseball-portrait-collection h1 {
+    font-size:1.2rem ;
+  }
+}
