@@ -325,11 +325,12 @@ a {
   display: block;
   border-radius: 8px;
   max-width: 100%;
-  transition: box-shadow 0.25s ease;
+  transition: transform 0.3s ease-out, box-shadow 0.25s ease;
   box-shadow: 0 6px 18px rgba(0, 0, 0, 0.35);
 }
 
 .shirt-item img:hover {
+  transform: scale(1.05);
   box-shadow: 0 8px 22px rgba(168, 139, 255, 0.45);
 }
 
