@@ -334,6 +334,13 @@ a {
   box-shadow: 0 8px 22px rgba(168, 139, 255, 0.45);
 }
 
+.rewind {
+  color: blue;
+}
+
+.rewind:hover {
+  text-decoration: underline;
+}
 
 /* banner video */
 
