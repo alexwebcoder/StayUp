@@ -291,6 +291,11 @@ a {
   position: relative;
 }
 
+.shirt-item h2 {
+  font-size:1.25rem;
+  margin-top: .5rem;
+}
+
 .shirt-link {
   display: block;
   position: absolute;
