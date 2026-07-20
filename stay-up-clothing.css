@@ -265,7 +265,7 @@ a {
 
 /* bold collection */
 
-.bold-collection {
+.adventurous-collection, .principles-collection, .rewind-collection {
   background-image:
    linear-gradient(to right, #f0f0f0 1px, transparent 1px),
    linear-gradient(to bottom, #f0f0f0 1px, transparent 1px);
@@ -273,7 +273,7 @@ a {
  
 }
 
-.bold-collection .container {
+.adventurous-collection .container, .principles-collection .container, .rewind-collection .container {
   max-width: 1400px;
   margin: 0 auto;
   padding: 2rem 1rem;
@@ -297,23 +297,6 @@ a {
   top:0;
 }
 
-
-.shirt-item a::after, .zoom-video a::after {
-  content: "View on Etsy";
-  position: absolute;
-  top: 0;
-  left: 13%;
-  transform: translateX(-50%) translateY(-8px);
-  background: rgba(0, 0, 0, 0.85);
-  color: #fff;
-  font-size: 0.75rem;
-  padding: 6px 10px;
-  border-radius: 4px;
-  white-space: nowrap;
-  opacity: 0;
-  pointer-events: none;
-  transition: opacity 0.2s ease, transform 0.2s ease;
-}
 
 .shirt-item a:hover::after, .zoom-video a:hover::after {
   opacity: 1;
