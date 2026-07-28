@@ -381,6 +381,10 @@ a {
   margin: 0 0 1rem 0;
 }
 
+.rewind-page .shop-now-bottom {
+  margin-top: 1rem;
+}
+
 /* secondary shop now collection */
 .btn--secondary {
   display: inline-block;
