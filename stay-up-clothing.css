@@ -400,7 +400,6 @@ a {
 
 .btn--secondary:hover {
   background-color: #993300;
-  transform: translateY(-2px);
 }
 
 .share-icon {
@@ -486,10 +485,11 @@ h3.lookbook__title {
   padding-bottom: 0;
 }
 
-.about-story h2 {
+.about-story h1 {
   margin-bottom: 1rem;
   letter-spacing: 1px;
   color: #333;
+  padding: 0;
 }
 
 .story-container {
