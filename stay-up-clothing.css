@@ -263,7 +263,6 @@ a {
    font-size: 2rem;
 }
 
-/* bold collection */
 
 .adventurous-collection, .principles-collection, .rewind-collection {
   background-image:
@@ -579,6 +578,12 @@ h3.lookbook__title {
 
 
 /* form */
+
+.contact-main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
 .contact-container {
   display: flex;
