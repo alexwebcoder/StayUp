@@ -80,7 +80,7 @@ a {
 /* Free Shipping Bar */
 .free-shipping-bar {
   width: 100%;
-  background-color: #fff;
+  background-color: #c0e0e8;
   color: #000;
   text-align: center;
   font-family: 'League Spartan', sans-serif;
@@ -264,7 +264,7 @@ a {
 }
 
 
-.adventurous-collection, .principles-collection, .rewind-collection {
+.adventurous-collection, .principles-collection, .rewind-collection, .mindset-collection {
   background-image:
    linear-gradient(to right, #f0f0f0 1px, transparent 1px),
    linear-gradient(to bottom, #f0f0f0 1px, transparent 1px);
@@ -272,7 +272,7 @@ a {
  
 }
 
-.adventurous-collection .container, .principles-collection .container, .rewind-collection .container {
+.adventurous-collection .container, .principles-collection .container, .rewind-collection .container, .mindset-collection .container {
   max-width: 1400px;
   margin: 0 auto;
   padding: 2rem 1rem;
