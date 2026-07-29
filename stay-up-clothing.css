@@ -325,11 +325,11 @@ a {
   box-shadow: 0 8px 22px rgba(168, 139, 255, 0.45);
 }
 
-.rewind {
+.collection-link {
   color: blue;
 }
 
-.rewind:hover {
+.collection-link:hover {
   text-decoration: underline;
 }
 
