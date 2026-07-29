@@ -549,9 +549,11 @@ h3.lookbook__title {
 
 /* contact page */
 
-.contact-left-title h2 {
+.contact-left-title h1 {
   font-weight: 600;
   margin-bottom: 5px;
+  padding:0;
+  font-size: 1.875rem;
 }
 
 .contact-inputs {
@@ -942,7 +944,7 @@ h3.lookbook__title {
   body {
     font-size: 1rem;
   }
-  h1,h2, h3 {
+  h1,h2, h3, .contact-left-title h1 {
     font-size: 1.625rem;
   }
 }
