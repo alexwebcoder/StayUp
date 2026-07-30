@@ -1,0 +1,192 @@
+/* ==========================================================
+   HERO
+========================================================== */
+
+.hero {
+    position: relative;
+    width: 100%;
+    height:500px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ==========================================================
+   BACKGROUND
+========================================================== */
+
+.hero-bg {
+    position: absolute;
+    inset: -30px;
+    width: calc(100% + 60px);
+    height: calc(100% + 60px);
+    object-fit: cover;
+
+    filter: blur(8px);
+    transform: scale(1.08);
+
+    opacity: 0;
+
+    animation: bgFade .8s ease forwards;
+}
+
+/* ==========================================================
+   CONTENT
+========================================================== */
+
+.hero-content {
+    position: relative;
+    z-index: 20;
+
+    text-align: center;
+
+    opacity: 0;
+
+    animation: contentFade .8s ease forwards;
+    animation-delay: 1s;
+}
+
+.hero-content h1 {
+    margin: 0;
+}
+
+.hero-content p {
+    margin: 20px 0 35px;
+}
+
+.hero-btn {
+    display: inline-block;
+}
+
+/* ==========================================================
+   SHIRTS
+========================================================== */
+
+.hero-shirt {
+    position: absolute;
+    z-index: 10;
+    width: 320px;
+    opacity: 0;
+    filter: drop-shadow(0 0 8px rgba(255,255,255,.8));
+}
+
+/* LEFT */
+
+
+.shirt-left {
+    left: 5%;
+    bottom: 5%;
+    width: 465px;
+    transform: translateX(-120px) scale(1.45) rotate(-12deg);
+    animation: leftShirt 1.2s ease-out forwards;
+    animation-delay: .2s;
+}
+
+/* CENTER */
+
+.shirt-center {
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%) translateY(60px) scale(.85);
+    animation: centerShirt 1s ease-out forwards;
+    animation-delay: .45s;
+
+}
+
+/* RIGHT */
+
+.shirt-right {
+    right: 10%;
+    bottom: 0;
+    transform: translateX(120px) scale(.90);
+    animation: rightShirt 1s ease-out forwards;
+    animation-delay: .7s;
+}
+
+/* ==========================================================
+   ANIMATIONS
+========================================================== */
+
+@keyframes bgFade {
+
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+
+}
+
+@keyframes leftShirt {
+
+    from {
+
+        opacity: 0;
+        transform: translateX(-120px) scale(1.45) rotate(-12deg);
+
+    }
+
+    to {
+
+        opacity: 1;
+        transform: translateX(0) scale(1) rotate(-45deg);
+
+    }
+
+}
+@keyframes centerShirt {
+
+    from {
+
+        opacity: 0;
+        transform: translateX(-50%) translateY(60px) scale(.85);
+
+    }
+
+    to {
+
+        opacity: 1;
+        transform: translateX(-50%) translateY(0) scale(1);
+
+    }
+
+}
+
+@keyframes rightShirt {
+
+    from {
+
+        opacity: 0;
+        transform: translateX(120px) scale(.90);
+
+    }
+
+    to {
+
+        opacity: 1;
+        transform: translateX(0) scale(1);
+
+    }
+
+}
+
+@keyframes contentFade {
+
+    from {
+
+        opacity: 0;
+        transform: translateY(20px);
+
+    }
+
+    to {
+
+        opacity: 1;
+        transform: translateY(0);
+
+    }
+
+}
