@@ -197,7 +197,34 @@
 }
 
 @media (max-width: 1600px) {
-    .shirt-left  { width: 400px; left: 2%; }
+    .shirt-left  { width: 350px; left: 2%; }
     .shirt-center{ width: 420px; }
-    .shirt-right { width: 400px; right: 2%; }
+    .shirt-right { width: 350px; right: 2%; }
+    .hero {
+        height: 425px;
+    }
+}
+
+@media (max-width: 1300px) {
+    .shirt-left  { width: 275px; left: 2%; }
+    .shirt-center{ width: 350px; }
+    .shirt-right { width: 275px; right: 2%; }
+    .hero {height: 350px;}
+}
+
+@media (max-width: 1092px) {
+    .shirt-left  { width: 200px; left: 2%; }
+    .shirt-center{ width: 300px; }
+    .shirt-right { width: 200px; right: 2%; }
+    .hero {height: 275px;}
+}
+
+@media (max-width: 768px) {
+    .hero {height: 470px;}
+    .shirt-left {
+        bottom: 54%;
+    }
+    .shirt-right {
+        bottom: 54%
+    }
 }
