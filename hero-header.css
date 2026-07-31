@@ -101,11 +101,11 @@
 
 .shirt-right {
     right: 6%;
-    bottom: 0;
-    transform: translateX(120px) scale(.75);
+    bottom: 5%;
+    transform: translateX(220px) scale(.75)  rotate(12deg);
     animation: rightShirt 1s ease-out forwards;
     animation-delay: .7s;
-    width: 500px;
+    width: 465px;
     filter:none;
 }
 
@@ -165,14 +165,14 @@
     from {
 
         opacity: 0;
-        transform: translateX(120px) scale(.75);
+        transform: translateX(220px) scale(.75) rotate(12deg);
 
     }
 
     to {
 
         opacity: 1;
-        transform: translateX(0) scale(1);
+        transform: translateX(0) scale(1) rotate(45deg);
 
     }
 
