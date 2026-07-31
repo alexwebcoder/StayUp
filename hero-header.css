@@ -195,3 +195,9 @@
     }
 
 }
+
+@media (max-width: 1600px) {
+    .shirt-left  { width: 400px; left: 2%; }
+    .shirt-center{ width: 420px; }
+    .shirt-right { width: 400px; right: 2%; }
+}
