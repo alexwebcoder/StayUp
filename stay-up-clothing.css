@@ -275,7 +275,7 @@ a {
 .adventure-collection .container, .principles-collection .container, .rewind-collection .container, .mindset-collection .container {
   max-width: 1400px;
   margin: 0 auto;
-  padding: 2rem 1rem;
+  padding: 1rem;
 }
 
 .shirt-grid {
@@ -881,9 +881,11 @@ h3.lookbook__title {
   .hero-message-mobile {
     display: block;
     text-align: center;
-    margin: 1rem auto;
+    margin-bottom: 1rem;
     font-size: 1rem;
-    max-width: 90%;
+    padding: 1rem;
+    background-color: #000;
+    color: #fff;
   }
 
   .slider-wrapper {
@@ -896,6 +898,10 @@ h3.lookbook__title {
 
   .contact-right {
     display: none;
+  }
+
+  .collection-header {
+    padding: .5rem;
   }
 
   .email-banner {
@@ -938,14 +944,37 @@ h3.lookbook__title {
 
 }
 
+@media (min-width: 600px) and (max-width: 960px) {
+
+    .shirt-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+
+    .shirt-item:last-child {
+        grid-column: 1 / 3;
+        justify-self: center;
+        width: 50%;
+        padding-top: calc(1000 / 2000 * 100%);
+    }
+
+}
+
 @media (max-width: 600px) {
   .lookbook__grid {
     column-count: 1;
   }
 
   .shirt-grid {
-    grid-template-columns: repeat(1, 1fr);
+     grid-template-columns: 1fr;
+     gap: 1.5rem;
+    justify-items: center;
   }
+
+  .shirt-item {
+        width: 80%;
+        padding-top: calc(1600 / 2000 * 100%);
+    }
 
   body {
     font-size: 1rem;
