@@ -28,3 +28,26 @@ window.addEventListener("scroll", () => {
     }
   }
 });
+
+document.addEventListener("DOMContentLoaded", () => {
+ const menuButton = document.querySelector('.mobile-menu-toggle');
+const mobileNav = document.querySelector('.mobile-nav');
+const closeButton = document.querySelector('.mobile-menu-close');
+
+
+menuButton.addEventListener('click', () => {
+
+    mobileNav.classList.add('open');
+    menuButton.setAttribute('aria-expanded', 'true');
+
+});
+
+
+closeButton.addEventListener('click', () => {
+
+    mobileNav.classList.remove('open');
+    menuButton.setAttribute('aria-expanded', 'false');
+
+});
+
+});
