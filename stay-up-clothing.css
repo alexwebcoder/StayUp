@@ -828,7 +828,7 @@ h3.lookbook__title {
         color: white;
         font-size: 1rem;
         letter-spacing: 1px;
-        padding: 0 0 .5rem 0;
+        padding: 0 0 .3rem 0;
         cursor: pointer;
     }
 
@@ -841,7 +841,7 @@ h3.lookbook__title {
         top: 100%;
         left: 0;
         width: 100%;
-         background: rgba(0,0,0,.95);
+         background: rgba(0,0,0,.895);
         max-height: 0;
         overflow: hidden;
         display: flex;
@@ -852,6 +852,10 @@ h3.lookbook__title {
         transition:  max-height .45s ease-in-out,
                      transform .45s ease-in-out;
          z-index: 1000;
+    }
+
+    .mobile-share {
+      margin-bottom: -10px;
     }
 
     .mobile-nav a {
@@ -871,7 +875,7 @@ h3.lookbook__title {
         color: white;
         font-size: 2rem;
         cursor: pointer;
-        margin-top: .5rem;
+        padding-bottom: 10px;
     }
 
     .mobile-nav.open {
@@ -900,7 +904,7 @@ h3.lookbook__title {
     top: 0;
     z-index: 1000;
     transition: all 0.3s ease;
-    padding: 1rem 0 0 0;
+    padding: .5rem 0 0 0;
   }
 
   .banner-section {
@@ -915,12 +919,16 @@ h3.lookbook__title {
   .site-header.scrolled {
     background-color: rgba(40, 0, 60, 0.85);
   box-shadow: 0 2px 6px rgba(0,0,0,0.4);
-  padding: 2.7rem 2rem 0rem 2rem;
+  padding: 2.7rem 0 0 0;
 }
 
   .site-header.scrolled .tagline {
     display: none;
     transition: opacity 0.3s ease;
+  }
+
+  .site-header.scrolled .mobile-menu-toggle {
+    padding-bottom: .2rem;
   }
 
   .slider-wrapper {
@@ -939,6 +947,8 @@ h3.lookbook__title {
 
   .tagline {
         margin: 0 0 7px 0;
+        position: relative;
+        top: 2px;
   }
 
   .lookbook__grid figure:last-child {
@@ -1055,6 +1065,12 @@ h3.lookbook__title {
   }
   h1,h2, h3, .contact-left-title h1 {
     font-size: 1.625rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .tagline {
+    display:none;
   }
 }
 
