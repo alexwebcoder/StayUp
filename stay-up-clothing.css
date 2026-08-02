@@ -882,6 +882,10 @@ h3.lookbook__title {
         max-height: 400px;
         transform: translateY(0);
     }
+    .share-icon-mobile {
+      width: 23px;
+      height: 23px;
+  }
 }
 
 
@@ -1068,7 +1072,7 @@ h3.lookbook__title {
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 340px) {
   .tagline {
     display:none;
   }

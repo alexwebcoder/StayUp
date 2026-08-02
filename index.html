@@ -479,9 +479,17 @@
             </button>
 
             <nav class="mobile-nav">
-               <a href="about.html">ABOUT</a>
-               <a href="contact.html">CONTACT</a>
-               <a href="share.html" class="mobile-share">SHARE</a>
+               <a href="stay_up_clothing_about.html">ABOUT</a>
+               <a href="stay_up_clothing_contact_us.html">CONTACT</a>
+               <a href="https://www.etsy.com/shop/StayUpOriginal?utm_source=stayup&utm_medium=website&utm_campaign=shop_button"
+               onclick="gtag('event','etsy_click',{
+                              button:'mobile-menu_etsy_button',
+                              location:'home_page'
+                           });"
+               target="_blank">SHOP</a>
+               <a href="#" id="shareButton" class="mobile-share">
+                           <img src="/Images/share.svg" alt="Share this website" class="share-icon share-icon-mobile">
+                        </a>
 
                <button class="mobile-menu-close" aria-label="Close menu">
                      ×
