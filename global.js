@@ -17,17 +17,30 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
+document.addEventListener("DOMContentLoaded", () => {
+ const header = document.querySelector(".site-header");
+
+let isScrolled = false;
 
 window.addEventListener("scroll", () => {
-  const header = document.querySelector(".site-header");
-  if (window.innerWidth <= 768) {
-    if (window.scrollY > 50) {
-      header.classList.add("scrolled");
-    } else {
-      header.classList.remove("scrolled");
+
+    if (window.innerWidth > 768) return;
+
+    if (!isScrolled && window.scrollY > 60) {
+
+        header.classList.add("scrolled");
+        isScrolled = true;
+
+    } else if (isScrolled && window.scrollY < 20) {
+
+        header.classList.remove("scrolled");
+        isScrolled = false;
+
     }
-  }
+
 });
+
+})
 
 document.addEventListener("DOMContentLoaded", () => {
  const menuButton = document.querySelector('.mobile-menu-toggle');
