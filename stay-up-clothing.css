@@ -93,7 +93,7 @@ a {
 }
 
 .hero-message {
-  font-size: 1.375rem;
+  font-size: 1.25rem;
   font-weight: 500;
   letter-spacing: 1px;
 }
@@ -799,24 +799,28 @@ h3.lookbook__title {
 }
 }
 
+@media (max-width: 1290px) {
+ .header-center {
+    display: none;
+  }
+   .hero-message-mobile {
+    display: block;
+    text-align: center;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    padding: 1rem;
+    background-color: #000;
+    color: #fff;
+  }
+}
+
 
 @media (max-width: 960px) {
 
-  .site-header {
-    padding-bottom:0;
-  }
   .shirt-grid {
     grid-template-columns: repeat(2, 1fr);
   }
-  .header-right {
-    display: none;
-  }
-   .mobile-menu {
-        display: block;
-        width: 100%;
-        position: relative;
-    }
-
+ 
     .mobile-menu-toggle {
         width: 100%;
         display: flex;
@@ -911,6 +915,16 @@ h3.lookbook__title {
     padding: .5rem 0 0 0;
   }
 
+   .header-right {
+    display: none;
+  }
+
+    .mobile-menu {
+        display: block;
+        width: 100%;
+        position: relative;
+    }
+
   .banner-section {
     padding: 1rem;
   }
@@ -945,10 +959,6 @@ h3.lookbook__title {
     width: 90%;
   }
 
-  .header-center {
-    display: none;
-  }
-
   .tagline {
         margin: 0 0 7px 0;
         position: relative;
@@ -964,16 +974,6 @@ h3.lookbook__title {
     justify-content: center;
     gap: 1rem;
     width: 100%;
-  }
-
-  .hero-message-mobile {
-    display: block;
-    text-align: center;
-    margin-bottom: 1rem;
-    font-size: 1rem;
-    padding: 1rem;
-    background-color: #000;
-    color: #fff;
   }
 
   .slider-wrapper {
