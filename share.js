@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
     let isSharing = false; // Track sharing state
-    const shareButtons = document.querySelectorAll("#shareButton, #shareButtonLower");
+    const shareButtons = document.querySelectorAll("#shareButton, #shareButtonLower, #shareButtonMobile");
 
     shareButtons.forEach((btn) => {
         btn.addEventListener("click", async function (event) {

@@ -89,11 +89,11 @@
 
 .shirt-center {
     left: 50%;
-    bottom: -4%;
+    bottom: 2%;
     transform: translateX(-50%) translateY(150px) scale(.85);
     animation: centerShirt 1.3s ease-out forwards;
     animation-delay: .45s;
-    width: 550px;
+    width: 497px;
 
 }
 
@@ -214,8 +214,8 @@
 
 @media (max-width: 1092px) {
     .shirt-left  { width: 200px; left: 2%; }
-    .shirt-center{ width: 300px; }
-    .shirt-right { width: 200px; right: 2%; }
+    .shirt-center{ width: 275px; }
+    .shirt-right { width: 240px; right: 2%; }
     .hero {height: 275px;}
 }
 
@@ -225,6 +225,6 @@
         bottom: 54%;
     }
     .shirt-right {
-        bottom: 54%
+        bottom: 49%
     }
 }
