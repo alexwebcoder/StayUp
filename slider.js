@@ -77,24 +77,38 @@ prev.addEventListener('click', () => {
 
 
 // One-time carousel nudge
-window.addEventListener('load', () => {
+const observer = new IntersectionObserver((entries) => {
 
-    setTimeout(() => {
+    entries.forEach(entry => {
 
-        slides.scrollBy({
-            left: 60,
-            behavior: 'smooth'
-        });
+        if (entry.isIntersecting) {
 
-        setTimeout(() => {
+            setTimeout(() => {
 
-            slides.scrollBy({
-                left: -60,
-                behavior: 'smooth'
-            });
+                slides.scrollBy({
+                    left: 60,
+                    behavior: 'smooth'
+                });
 
-        }, 800);
+                setTimeout(() => {
 
-    }, 1200);
+                    slides.scrollBy({
+                        left: -60,
+                        behavior: 'smooth'
+                    });
 
+                }, 800);
+
+            }, 300);
+
+            observer.disconnect(); // only run once
+
+        }
+
+    });
+
+}, {
+    threshold: 0.5
 });
+
+observer.observe(slides);
