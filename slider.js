@@ -1,10 +1,7 @@
-const slider = document.querySelector('.slider');
 const slides = document.querySelector('.slides');
 const cards = document.querySelectorAll('.slides picture');
 const prev = document.querySelector('.prev');
 const next = document.querySelector('.next');
-
-let autoScroll;
 
 
 // Determine how many shirts are visible
@@ -79,30 +76,25 @@ prev.addEventListener('click', () => {
 });
 
 
-// Auto scroll
-function startAutoScroll() {
+// One-time carousel nudge
+window.addEventListener('load', () => {
 
-    clearInterval(autoScroll);
+    setTimeout(() => {
 
-    if (window.innerWidth >= 768) {
+        slides.scrollBy({
+            left: 60,
+            behavior: 'smooth'
+        });
 
-        autoScroll = setInterval(() => {
+        setTimeout(() => {
 
-            next.click();
+            slides.scrollBy({
+                left: -60,
+                behavior: 'smooth'
+            });
 
-        }, 4000);
+        }, 800);
 
-    }
-
-}
-
-
-startAutoScroll();
-
-
-// Reset on resize
-window.addEventListener('resize', () => {
-
-    startAutoScroll();
+    }, 1200);
 
 });
