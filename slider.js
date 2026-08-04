@@ -1,50 +1,108 @@
-
+const slider = document.querySelector('.slider');
 const slides = document.querySelector('.slides');
-const images = document.querySelectorAll('.slides img');
+const cards = document.querySelectorAll('.slides picture');
 const prev = document.querySelector('.prev');
 const next = document.querySelector('.next');
 
-let index = 0;
+let autoScroll;
 
-function showSlide(i) {
-  if (i < 0) index = images.length - 1;
-  else if (i >= images.length) index = 0;
-  else index = i;
 
-  const slideWidth = document.querySelector('.slider').clientWidth;
-  slides.style.transform = `translateX(-${index * slideWidth}px)`;
+// Determine how many shirts are visible
+function getVisibleCards() {
+
+    if (window.innerWidth >= 1200) {
+        return 3;
+    }
+
+    if (window.innerWidth >= 768) {
+        return 2;
+    }
+
+    return 1;
 }
 
-prev.addEventListener('click', () => showSlide(index - 1));
-next.addEventListener('click', () => showSlide(index + 1));
+
+// Calculate how far to scroll
+function getScrollAmount() {
+
+    const card = cards[0];
+    const cardWidth = card.getBoundingClientRect().width;
+
+    return cardWidth * getVisibleCards();
+
+}
 
 
-let startX = 0;
-let endX = 0;
+// Next button
+next.addEventListener('click', () => {
 
-slides.addEventListener('touchstart', e => {
-  startX = e.touches[0].clientX;
+    const maxScroll = slides.scrollWidth - slides.clientWidth;
+
+    if (slides.scrollLeft >= maxScroll - 5) {
+
+        slides.scrollTo({
+            left: 0,
+            behavior: 'smooth'
+        });
+
+    } else {
+
+        slides.scrollBy({
+            left: getScrollAmount(),
+            behavior: 'smooth'
+        });
+
+    }
+
 });
 
-slides.addEventListener('touchend', e => {
-  endX = e.changedTouches[0].clientX;
-  handleSwipe();
+
+// Previous button
+prev.addEventListener('click', () => {
+
+    if (slides.scrollLeft <= 5) {
+
+        slides.scrollTo({
+            left: slides.scrollWidth,
+            behavior: 'smooth'
+        });
+
+    } else {
+
+        slides.scrollBy({
+            left: -getScrollAmount(),
+            behavior: 'smooth'
+        });
+
+    }
+
 });
 
-function handleSwipe() {
-  const diff = endX - startX;
-  if (Math.abs(diff) > 50) { // 50px threshold
-    if (diff < 0) showSlide(index + 1); // swipe left → next
-    else showSlide(index - 1);          // swipe right → prev
-  }
+
+// Auto scroll
+function startAutoScroll() {
+
+    clearInterval(autoScroll);
+
+    if (window.innerWidth >= 768) {
+
+        autoScroll = setInterval(() => {
+
+            next.click();
+
+        }, 4000);
+
+    }
+
 }
 
 
-if (window.innerWidth > 768) {
-  setInterval(() => {
-    showSlide(index + 1);
-  }, 4000); // change 3000 to adjust speed (ms)
-}
+startAutoScroll();
 
 
+// Reset on resize
+window.addEventListener('resize', () => {
 
+    startAutoScroll();
+
+});
