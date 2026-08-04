@@ -210,7 +210,7 @@
     .shirt-left  { width: 275px; left: 2%; }
     .shirt-center{ width: 350px; }
     .shirt-right { width: 275px; right: 2%; }
-    .hero {height: 350px;}
+    .hero {height: 360px;}
 }
 
 @media (max-width: 1092px) {
