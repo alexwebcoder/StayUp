@@ -190,7 +190,6 @@ a {
 
 .slider {
  width: 100%;
-  max-width: 1400px;
   /* aspect-ratio: 1 / 1; */
   overflow: hidden;
   position: relative;
@@ -808,6 +807,12 @@ h3.lookbook__title {
 @media (min-width: 1200px) {
     .slides picture {
         flex: 0 0 31%;
+    }
+}
+
+@media (min-width: 2067px) {
+    .slides picture {
+        max-width: 570px;
     }
 }
 
