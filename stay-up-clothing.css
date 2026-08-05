@@ -33,7 +33,8 @@ h2, h3 {
 .wrapper {
     min-height: 100dvh;
     display: grid;
-    grid-template-rows: auto 1fr auto;
+    grid-template-rows: auto auto 1fr auto;
+
 }
 
 a {

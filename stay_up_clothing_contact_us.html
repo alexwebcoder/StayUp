@@ -20,10 +20,10 @@
       <script src="share.js" defer></script>
    </head>
    <body>
-      <div class="free-shipping-bar">
-        Free Shipping on all US orders
-     </div>
       <div class="wrapper">
+         <div class="free-shipping-bar">
+           Free Shipping on all US orders
+        </div>
          <!-- HEADER -->
          <header class="site-header">
             <div class="header-left">
@@ -42,6 +42,13 @@
                   <ul>
                      <li><a href="stay_up_clothing_about.html">About</a></li>
                      <li><a href="stay_up_clothing_contact_us.html">Contact</a></li>
+                     <li><a href="https://www.etsy.com/shop/StayUpOriginal?utm_source=stayup&utm_medium=website&utm_campaign=shop_button"
+               onclick="gtag('event','etsy_click',{
+                              button:'desktop_menu_etsy_button',
+                              location:'contact_page'
+                           });"
+                          target="_blank">
+                        Shop</a></li>
                      <li>
                         <a href="#" id="shareButton">
                            <img src="/Images/share.svg" alt="Share this website" class="share-icon">
@@ -50,6 +57,30 @@
                   </ul>
                </nav>
             </div>
+            <div class="mobile-menu">
+            <button class="mobile-menu-toggle" aria-expanded="false">
+               <span class="hamburger">☰</span>
+               <span>MENU</span>
+            </button>
+
+            <nav class="mobile-nav">
+               <a href="stay_up_clothing_about.html">ABOUT</a>
+               <a href="stay_up_clothing_contact_us.html">CONTACT</a>
+               <a href="https://www.etsy.com/shop/StayUpOriginal?utm_source=stayup&utm_medium=website&utm_campaign=shop_button"
+               onclick="gtag('event','etsy_click',{
+                              button:'mobile_menu_etsy_button',
+                              location:'contact_page'
+                           });"
+               target="_blank">SHOP</a>
+               <a href="#" id="shareButtonMobile" class="mobile-share">
+                           <img src="/Images/share.svg" alt="Share this website" class="share-icon share-icon-mobile">
+                        </a>
+
+               <button class="mobile-menu-close" aria-label="Close menu">
+                     ×
+               </button>
+            </nav>
+         </div>
          </header>
          <!-- MAIN -->
          <main class="contact-main">
