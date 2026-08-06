@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+<urlset 
+xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
 
   <url>
     <loc>https://stayup.com/</loc>
@@ -7,6 +10,11 @@
 
   <url>
     <loc>https://stayup.com/stay_up_clothing_about.html</loc>
+    <image:image>
+      <image:loc>https://www.stayup.com/Images/stay-up-clothing-brand-alex-deleon.webp</image:loc>
+      <image:title>Alex DeLeon Founder of Stay Up Clothing</image:title>
+      <image:caption>Alex DeLeon, founder and designer of Stay Up Clothing</image:caption>
+    </image:image>
   </url>
 
   <url>
@@ -16,7 +24,9 @@
   <url>
     <loc>https://stayup.com/artwork.html</loc>
   </url>
-   <url>
+
+  <url>
     <loc>https://stayup.com/baseball-scribble-art.html</loc>
   </url>
+
 </urlset>
