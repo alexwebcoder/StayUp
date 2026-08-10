@@ -275,6 +275,10 @@ a {
    font-size: 2rem;
 }
 
+.rewind-main .shop-now-btn {
+  margin-bottom: 0;
+}
+
 
 .adventure-collection, .principles-collection, .rewind-collection, .mindset-collection {
   background-image:
@@ -823,6 +827,13 @@ h3.lookbook__title {
 /* --------------------- */
 /* RESPONSIVE */
 /* --------------------- */
+@media (min-width: 960px) {
+   
+ .rewind-collection  .shirt-item:nth-child(7), .rewind-collection .shirt-item:nth-child(8) {
+   transform: translateX(53.33%);
+}
+
+}
 
 @media (min-width: 768px) {
     .slides a {
@@ -1014,6 +1025,10 @@ h3.lookbook__title {
     width: 90%;
   }
 
+  .rewind-main .shop-now-btn {
+    margin-top: 1rem;
+  }
+
   .tagline {
         margin: 0 0 7px 0;
         position: relative;
@@ -1094,7 +1109,7 @@ h3.lookbook__title {
         gap: 2rem;
     }
 
-    .shirt-item:last-child {
+  .homepage-main .shirt-item:last-child {
         grid-column: 1 / 3;
         justify-self: center;
         width: 50%;
