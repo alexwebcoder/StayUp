@@ -558,6 +558,10 @@ h3.lookbook__title {
   margin: 0 auto;
 }
 
+.story-image.alex figcaption, .story-image.alex .caption-location {
+  text-align: center;
+}
+
 .story-image figcaption {
   margin-top: 0.5rem;
   font-size: 0.9rem;
