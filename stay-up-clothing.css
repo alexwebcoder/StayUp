@@ -367,18 +367,18 @@ a {
   padding: 2rem;
 }
 
-.video-figure {
+.video-figure, .banner-figure {
   aspect-ratio: 16 / 9;
   width: 48%;
   display: flex;
   position: relative;
 }
 
-.zoom-video .banner-video {
+.zoom-video .banner-video, .zoom-image .banner-image {
   max-width: none;
 }
 
-.banner-video {
+.banner-video, .banner-image {
   max-width: 1200px;
   width: 100%;
   height: auto;
