@@ -374,8 +374,24 @@ a {
   position: relative;
 }
 
-.zoom-video .banner-video, .zoom-image .banner-image {
+.zoom-video .banner-video {
   max-width: none;
+}
+
+.zoom-image .banner-image {
+  max-width: 56%;
+  transform: scale(1);
+  animation: principlesZoom 8s ease-out forwards;
+}
+
+@keyframes principlesZoom {
+    from {
+        transform: scale(1);
+    }
+
+    to {
+        transform: scale(1.2);
+    }
 }
 
 .banner-video, .banner-image {
@@ -854,7 +870,7 @@ h3.lookbook__title {
 }
 
 @media (max-width: 1360px) {
-   .video-figure {
+   .video-figure, .banner-figure {
   width: 100%;
 }
 }
