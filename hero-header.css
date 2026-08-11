@@ -80,7 +80,7 @@
     bottom: 5%;
     width: 465px;
     transform: translateX(-120px) scale(1.45) rotate(-12deg);
-    animation: leftShirt 1.2s ease-out forwards;
+    animation: leftShirt 2.2s ease-out forwards;
     animation-delay: .2s;
     filter: drop-shadow(0 0 8px rgba(255,255,255,.8));
 }
@@ -91,7 +91,7 @@
     left: 50%;
     bottom: 2%;
     transform: translateX(-50%) translateY(150px) scale(.85);
-    animation: centerShirt 1.3s ease-out forwards;
+    animation: centerShirt 2.3s ease-out forwards;
     animation-delay: .45s;
     width: 497px;
     z-index: 11;
@@ -104,7 +104,7 @@
     right: 6%;
     bottom: 5%;
     transform: translateX(220px) scale(.75)  rotate(12deg);
-    animation: rightShirt 1s ease-out forwards;
+    animation: rightShirt 2s ease-out forwards;
     animation-delay: .7s;
     width: 465px;
     filter:none;

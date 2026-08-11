@@ -384,7 +384,7 @@ a {
 }
 
 .zoom-image .banner-image.zoom-active {
-  animation: principlesZoom 8s ease-out forwards;
+  animation: principlesZoom 9s ease-out forwards;
 }
 
 @keyframes principlesZoom {
@@ -393,7 +393,7 @@ a {
     }
 
     to {
-        transform: scale(1.2);
+        transform: scale(1.3);
     }
 }
 
@@ -481,6 +481,11 @@ a {
 
 h3.lookbook__title {
   color: #444;
+  font-size: clamp(2rem, 4vw, 3.5rem);
+    font-weight: 800;
+    letter-spacing: 0.04em;
+    margin: 2rem auto;
+    text-transform: uppercase;
 }
 
 .lookbook__grid img {

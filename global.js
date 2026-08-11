@@ -79,8 +79,35 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     }, {
-        threshold: 0.3
+        threshold: 0.4
     });
 
     observer.observe(image);
+});
+
+document.addEventListener('DOMContentLoaded', () => {
+   const bannerVideo = document.querySelector('.banner-video');
+
+if (bannerVideo) {
+    const videoObserver = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                console.log('BANNER VIDEO THRESHOLD REACHED — loading video now');
+                const videoSource = document.createElement('source');
+                videoSource.src = bannerVideo.dataset.src;
+                videoSource.type = 'video/mp4';
+
+                bannerVideo.appendChild(videoSource);
+                bannerVideo.load();
+                bannerVideo.play();
+
+                observer.unobserve(bannerVideo);
+            }
+        });
+    }, {
+        rootMargin: '300px'
+    });
+
+    videoObserver.observe(bannerVideo);
+}
 });
