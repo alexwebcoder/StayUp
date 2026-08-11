@@ -381,6 +381,9 @@ a {
 .zoom-image .banner-image {
   max-width: 56%;
   transform: scale(1);
+}
+
+.zoom-image .banner-image.zoom-active {
   animation: principlesZoom 8s ease-out forwards;
 }
 

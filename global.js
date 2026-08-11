@@ -64,3 +64,23 @@ closeButton.addEventListener('click', () => {
 });
 
 });
+
+
+document.addEventListener('DOMContentLoaded', () => {
+    const image = document.querySelector('.banner-image');
+
+    if (!image) return;
+
+    const observer = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                image.classList.add('zoom-active');
+                observer.unobserve(image);
+            }
+        });
+    }, {
+        threshold: 0.3
+    });
+
+    observer.observe(image);
+});
