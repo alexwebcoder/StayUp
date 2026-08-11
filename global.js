@@ -79,7 +79,7 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     }, {
-        threshold: 0.4
+        threshold: 0.7
     });
 
     observer.observe(image);
@@ -92,7 +92,6 @@ if (bannerVideo) {
     const videoObserver = new IntersectionObserver((entries, observer) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
-                console.log('BANNER VIDEO THRESHOLD REACHED — loading video now');
                 const videoSource = document.createElement('source');
                 videoSource.src = bannerVideo.dataset.src;
                 videoSource.type = 'video/mp4';

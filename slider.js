@@ -82,9 +82,7 @@ const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
 
         if (entry.isIntersecting) {
-
             setTimeout(() => {
-
                 slides.scrollBy({
                     left: 60,
                     behavior: 'smooth'
