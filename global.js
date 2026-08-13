@@ -104,7 +104,7 @@ if (bannerVideo) {
             }
         });
     }, {
-        rootMargin: '300px'
+        rootMargin: '1000px 0px'
     });
 
     videoObserver.observe(bannerVideo);
