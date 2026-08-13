@@ -25,6 +25,10 @@ h1 {
   padding: 1rem 0;
 }
 
+.collection-header {
+    padding: 0;
+  }
+
 h2, h3 {
   font-size: 1.875rem;
   font-weight: 600;
@@ -70,7 +74,6 @@ a {
   font-weight: 400;
   line-height: 1.2;
 }
-
 
 .header-center {
   flex: 1;
@@ -291,7 +294,11 @@ a {
 .adventure-collection .container, .principles-collection .container, .rewind-collection .container, .mindset-collection .container {
   max-width: 1400px;
   margin: 0 auto;
-  padding: 1rem;
+  padding: 1rem 1rem 0 1rem;
+}
+
+.collection-link-parent.last {
+  margin-bottom: 1rem;
 }
 
 .shirt-grid {
@@ -346,7 +353,11 @@ a {
   color: #fff;
   padding: 1rem;
   border-radius: 8px;
-   margin: 0 auto .75rem auto;
+  margin: 1rem auto .75rem auto;
+}
+
+.collection-header + p {
+  padding-bottom: .5rem;
 }
 
 .collection-link {
@@ -365,6 +376,10 @@ a {
   justify-content: center;
   align-items: center;
   padding: 2rem;
+}
+
+.banner-section.principles-image {
+  margin-bottom: .75rem;
 }
 
 .video-figure, .banner-figure {
@@ -1077,10 +1092,6 @@ h3.lookbook__title {
     display: none;
   }
 
-  .collection-header {
-    padding: .5rem;
-  }
-
   .email-banner {
     padding: 1rem;
   }
@@ -1160,6 +1171,7 @@ h3.lookbook__title {
     .collection-link-parent {
       width: 80%;
       padding: .5rem;
+      margin-bottom: .5rem;
     }
 
     .collection-header + p {
