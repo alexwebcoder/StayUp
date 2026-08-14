@@ -110,3 +110,17 @@ if (bannerVideo) {
     videoObserver.observe(bannerVideo);
 }
 });
+
+document.addEventListener('DOMContentLoaded', () => {
+   const tradeshowFrames = document.querySelectorAll('.tradeshow-frame');
+
+   const frame1 = tradeshowFrames[0];
+   const frame5 = tradeshowFrames[1];
+
+   setTimeout(() => {
+    frame1.classList.add('fade-out');
+    frame5.classList.add('transitioning');
+    }, 9000);
+
+    
+});
