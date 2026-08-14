@@ -543,7 +543,7 @@ h3.lookbook__title {
 
 .tradeshow-animation {
     position: relative;
-    width: 30%;
+    width: 35%;
     overflow: hidden;
 }
 
@@ -565,7 +565,7 @@ h3.lookbook__title {
 .tradeshow-frame.active:first-child {
    opacity: 1;
    visibility: visible;
-    animation: tradeshow-camera-move 11s ease forwards;
+    animation: tradeshow-camera-move 13s ease forwards;
 }
 
 /* Frame 1 fades out */
@@ -586,7 +586,7 @@ h3.lookbook__title {
 
 @keyframes tradeshow-camera-move {
     from {
-        transform: translateX(0) scale(1);
+        transform: translateX(0) scale(.9);
     }
 
     to {
@@ -987,6 +987,10 @@ h3.lookbook__title {
    .video-figure, .banner-figure {
   width: 100%;
 }
+  .tradeshow-animation {
+    width: 65%;
+  }
+
 }
 
 @media (max-width: 1290px) {
@@ -1276,6 +1280,10 @@ h3.lookbook__title {
   }
   h1,h2, h3, .contact-left-title h1 {
     font-size: 1.625rem;
+  }
+
+  .tradeshow-animation {
+    width: 100%;
   }
 }
 
