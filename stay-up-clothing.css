@@ -538,6 +538,43 @@ h3.lookbook__title {
   padding-top: calc(1140 / 760 * 100%);
 }
 
+
+/* Tradeshow booth animation */
+
+.tradeshow-animation {
+    position: relative;
+    width: 30%;
+    overflow: hidden;
+}
+
+.tradeshow-frame {
+    display: block;
+    width: 110%;
+    height: auto;
+    opacity: 0;
+}
+
+.tradeshow-frame:not(:first-child) {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.tradeshow-frame.active {
+    opacity: 1;
+    animation: tradeshow-camera-move 5s ease forwards;
+}
+
+@keyframes tradeshow-camera-move {
+    from {
+        transform: translateX(0) scale(1);
+    }
+
+    to {
+        transform: translateX(-35px) scale(1.04);
+    }
+}
+
 /* about page */
 
 .about-story {
