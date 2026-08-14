@@ -578,7 +578,9 @@ h3.lookbook__title {
 .tradeshow-frame.transitioning {
     visibility: visible;
     opacity: 1;
-    transition: opacity 2s ease-in-out;
+    transition: opacity 3s ease-in-out;
+
+    transform: translateX(-85px) scale(1.14);
 }
 
 
@@ -591,6 +593,21 @@ h3.lookbook__title {
         transform: translateX(-85px) scale(1.14);
     }
 }
+
+.tradeshow-frame.frame-five-move {
+    animation: tradeshow-frame-five-push 6s ease forwards;
+}
+
+@keyframes tradeshow-frame-five-push {
+    from {
+        transform: translateX(-85px) scale(1.14);
+    }
+
+    to {
+        transform: translateX(-95px) scale(1.20);
+    }
+}
+
 
 /* about page */
 

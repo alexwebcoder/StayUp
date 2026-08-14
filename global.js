@@ -120,7 +120,11 @@ document.addEventListener('DOMContentLoaded', () => {
    setTimeout(() => {
     frame1.classList.add('fade-out');
     frame5.classList.add('transitioning');
-    }, 9000);
+       setTimeout(() => {
+        frame5.classList.add('frame-five-move');
+    }, 2000);
+
+    }, 7000);
 
     
 });
