@@ -571,7 +571,7 @@ h3.lookbook__title {
 /* Frame 1 fades out */
 .tradeshow-frame.fade-out {
     opacity: 0;
-    transition: opacity 2s ease-in-out;
+    transition: opacity 3s ease-in-out;
 }
 
 /* Frame 5 while transitioning in */
@@ -595,7 +595,7 @@ h3.lookbook__title {
 }
 
 .tradeshow-frame.frame-five-move {
-    animation: tradeshow-frame-five-push 6s ease forwards;
+    animation: tradeshow-frame-five-push 5s ease forwards;
 }
 
 @keyframes tradeshow-frame-five-push {
@@ -608,6 +608,27 @@ h3.lookbook__title {
     }
 }
 
+
+.tradeshow-frame.frame-six {
+    visibility: visible;
+    opacity: 1;
+    transform: translateX(-95px) scale(1.20);
+    transition: opacity 5s ease-in-out;
+}
+
+.tradeshow-frame.frame-six-move {
+    animation: tradeshow-frame-six-push 5s ease forwards;
+}
+
+@keyframes tradeshow-frame-six-push {
+    from {
+        transform: translateX(-95px) scale(1.20);
+    }
+
+    to {
+        transform: translateX(-105px) scale(1.2);
+    }
+}
 
 /* about page */
 

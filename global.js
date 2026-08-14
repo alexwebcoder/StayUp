@@ -116,15 +116,28 @@ document.addEventListener('DOMContentLoaded', () => {
 
    const frame1 = tradeshowFrames[0];
    const frame5 = tradeshowFrames[1];
+   const frame6 = tradeshowFrames[2];
+
 
    setTimeout(() => {
     frame1.classList.add('fade-out');
     frame5.classList.add('transitioning');
+
        setTimeout(() => {
         frame5.classList.add('frame-five-move');
     }, 2000);
 
     }, 7000);
 
+     setTimeout(() => {
+    frame5.classList.add('fade-out');
+    frame6.classList.add('frame-six');
+
+    // Start final push after crossfade
+    setTimeout(() => {
+        frame6.classList.add('frame-six-move');
+    }, 2000);
+
+}, 14000);
     
 });
