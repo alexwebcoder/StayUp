@@ -1287,6 +1287,47 @@ h3.lookbook__title {
   }
 }
 
+@media (max-width: 450px) {
+
+    .tradeshow-frame.transitioning {
+        transform: translateX(-45px) scale(1.14);
+    }
+
+    @keyframes tradeshow-camera-move {
+        from {
+            transform: translateX(0) scale(1);
+        }
+
+        to {
+            transform: translateX(-45px) scale(1.14);
+        }
+    }
+
+    @keyframes tradeshow-frame-five-push {
+        from {
+            transform: translateX(-45px) scale(1.14);
+        }
+
+        to {
+            transform: translateX(-50px) scale(1.20);
+        }
+    }
+
+    .tradeshow-frame.frame-six {
+        transform: translateX(-50px) scale(1.0);
+    }
+
+    @keyframes tradeshow-frame-six-push {
+        from {
+            transform: translateX(-50px) scale(1.0);
+        }
+
+        to {
+            transform: translateX(-65px) scale(1.11);
+        }
+    }
+}
+
 @media (max-width: 340px) {
   .tagline {
     display:none;
