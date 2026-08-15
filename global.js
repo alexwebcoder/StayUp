@@ -125,7 +125,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
        setTimeout(() => {
         frame5.classList.add('frame-five-move');
-    }, 2000);
+    }, 1900);
 
     }, 7000);
 
@@ -136,7 +136,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Start final push after crossfade
     setTimeout(() => {
         frame6.classList.add('frame-six-move');
-    }, 2000);
+    }, 4000);
 
 }, 14000);
     

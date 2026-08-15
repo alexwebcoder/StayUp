@@ -565,13 +565,13 @@ h3.lookbook__title {
 .tradeshow-frame.active:first-child {
    opacity: 1;
    visibility: visible;
-    animation: tradeshow-camera-move 13s ease forwards;
+    animation: tradeshow-camera-move 14s ease forwards;
 }
 
 /* Frame 1 fades out */
 .tradeshow-frame.fade-out {
     opacity: 0;
-    transition: opacity 3s ease-in-out;
+    transition: opacity 2.5s ease-in-out;
 }
 
 /* Frame 5 while transitioning in */
@@ -586,7 +586,7 @@ h3.lookbook__title {
 
 @keyframes tradeshow-camera-move {
     from {
-        transform: translateX(0) scale(.9);
+        transform: translateX(0) scale(1);
     }
 
     to {
@@ -612,21 +612,21 @@ h3.lookbook__title {
 .tradeshow-frame.frame-six {
     visibility: visible;
     opacity: 1;
-    transform: translateX(-95px) scale(1.20);
+    transform: translateX(-95px) scale(1.0);
     transition: opacity 5s ease-in-out;
 }
 
 .tradeshow-frame.frame-six-move {
-    animation: tradeshow-frame-six-push 5s ease forwards;
+    animation: tradeshow-frame-six-push 11s ease forwards;
 }
 
 @keyframes tradeshow-frame-six-push {
     from {
-        transform: translateX(-95px) scale(1.20);
+        transform: translateX(-95px) scale(1.0);
     }
 
     to {
-        transform: translateX(-105px) scale(1.2);
+        transform: translateX(-125px) scale(1.1);
     }
 }
 
