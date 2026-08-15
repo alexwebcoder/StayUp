@@ -626,7 +626,7 @@ h3.lookbook__title {
     }
 
     to {
-        transform: translateX(-125px) scale(1.1);
+        transform: translateX(-125px) scale(1.11);
     }
 }
 
