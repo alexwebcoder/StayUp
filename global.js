@@ -92,6 +92,7 @@ if (bannerVideo) {
     const videoObserver = new IntersectionObserver((entries, observer) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
+                console.log('flag video')
                 const videoSource = document.createElement('source');
                 videoSource.src = bannerVideo.dataset.src;
                 videoSource.type = 'video/mp4';
@@ -104,7 +105,7 @@ if (bannerVideo) {
             }
         });
     }, {
-        rootMargin: '1000px 0px'
+        rootMargin: '300px 0px'
     });
 
     videoObserver.observe(bannerVideo);
@@ -112,32 +113,45 @@ if (bannerVideo) {
 });
 
 document.addEventListener('DOMContentLoaded', () => {
-   const tradeshowFrames = document.querySelectorAll('.tradeshow-frame');
+    const tradeshow = document.querySelector('.tradeshow-animation');
+    const tradeshowFrames = document.querySelectorAll('.tradeshow-frame');
 
-   const frame1 = tradeshowFrames[0];
-   const frame5 = tradeshowFrames[1];
-   const frame6 = tradeshowFrames[2];
+    const frame1 = tradeshowFrames[0];
+    const frame5 = tradeshowFrames[1];
+    const frame6 = tradeshowFrames[2];
 
+    const observer = new IntersectionObserver((entries, observer) => {
+        if (entries[0].isIntersecting) {
+            console.log('trade show animation');
 
-   setTimeout(() => {
-    frame1.classList.add('fade-out');
-    frame5.classList.add('transitioning');
+            // Start frame 1 animation NOW
+            frame1.classList.add('active');
 
-       setTimeout(() => {
-        frame5.classList.add('frame-five-move');
-    }, 1900);
+            setTimeout(() => {
+                frame1.classList.add('fade-out');
+                frame5.classList.add('transitioning');
 
-    }, 7000);
+                setTimeout(() => {
+                    frame5.classList.add('frame-five-move');
+                }, 1900);
 
-     setTimeout(() => {
-    frame5.classList.add('fade-out');
-    frame6.classList.add('frame-six');
+            }, 7000);
 
-    // Start final push after crossfade
-    setTimeout(() => {
-        frame6.classList.add('frame-six-move');
-    }, 4000);
+            setTimeout(() => {
+                frame5.classList.add('fade-out');
+                frame6.classList.add('frame-six');
 
-}, 14000);
-    
+                setTimeout(() => {
+                    frame6.classList.add('frame-six-move');
+                }, 4000);
+
+            }, 14000);
+
+            observer.unobserve(tradeshow);
+        }
+    }, {
+        threshold: 1.0
+    });
+
+    observer.observe(tradeshow);
 });
