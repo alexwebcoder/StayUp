@@ -67,8 +67,11 @@ closeButton.addEventListener('click', () => {
 
 
 document.addEventListener('DOMContentLoaded', () => {
-    const image = document.querySelector('.banner-image');
+    const home = document.querySelector('.home-wrapper');
+    if (!home) return;
 
+    const image = home.querySelector('.banner-image');
+    
     if (!image) return;
 
     const observer = new IntersectionObserver((entries, observer) => {
@@ -86,7 +89,10 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 document.addEventListener('DOMContentLoaded', () => {
-   const bannerVideo = document.querySelector('.banner-video');
+    const home = document.querySelector('.home-wrapper');
+    if (!home) return;
+
+   const bannerVideo = home.querySelector('.banner-video');
 
 if (bannerVideo) {
     const videoObserver = new IntersectionObserver((entries, observer) => {
@@ -112,8 +118,11 @@ if (bannerVideo) {
 });
 
 document.addEventListener('DOMContentLoaded', () => {
-    const tradeshow = document.querySelector('.tradeshow-animation');
-    const tradeshowFrames = document.querySelectorAll('.tradeshow-frame');
+    const home = document.querySelector('.home-wrapper');
+    if (!home) return;
+
+    const tradeshow = home.querySelector('.tradeshow-animation');
+    const tradeshowFrames = home.querySelectorAll('.tradeshow-frame');
 
     const frame1 = tradeshowFrames[0];
     const frame5 = tradeshowFrames[1];
