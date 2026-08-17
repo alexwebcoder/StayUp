@@ -439,7 +439,7 @@ a {
   margin: 0 0 1rem 0;
 }
 
-.rewind-page .shop-now-bottom, .adventure-page .shop-now-bottom {
+.rewind-page .shop-now-bottom, .adventure-page .shop-now-bottom, .mindset-page .shop-now-bottom {
   margin-top: 1rem;
 }
 
@@ -965,6 +965,10 @@ h3.lookbook__title {
  .rewind-collection  .shirt-item:nth-child(7), .rewind-collection .shirt-item:nth-child(8) {
    transform: translateX(53.33%);
 }
+
+ .mindset-collection .shirt-item:last-child {
+   transform: translateX(108.33%);
+ }
 }
 
 @media (min-width: 768px) {
