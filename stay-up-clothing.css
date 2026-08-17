@@ -976,6 +976,10 @@ h3.lookbook__title {
     .slides a {
         flex: 0 0 31%;
     }
+
+    .collection-link-parent {
+      padding: 1.5rem;
+    }
 }
 
 @media (min-width: 2067px) {
