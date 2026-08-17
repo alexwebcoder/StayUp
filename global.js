@@ -92,7 +92,6 @@ if (bannerVideo) {
     const videoObserver = new IntersectionObserver((entries, observer) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
-                console.log('flag video')
                 const videoSource = document.createElement('source');
                 videoSource.src = bannerVideo.dataset.src;
                 videoSource.type = 'video/mp4';
@@ -105,7 +104,7 @@ if (bannerVideo) {
             }
         });
     }, {
-        rootMargin: '300px 0px'
+        rootMargin: '1600px 0px'
     });
 
     videoObserver.observe(bannerVideo);
@@ -122,7 +121,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const observer = new IntersectionObserver((entries, observer) => {
         if (entries[0].isIntersecting) {
-            console.log('trade show animation');
 
             // Start frame 1 animation NOW
             frame1.classList.add('active');

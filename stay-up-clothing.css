@@ -545,18 +545,19 @@ h3.lookbook__title {
     position: relative;
     width: 35%;
     overflow: hidden;
+    padding-top: calc(395 / 1537 * 100%);
 }
 
 .tradeshow-frame {
     display: block;
     width: 110%;
     height: auto;
-}
-/* frame 5 and any other non active frame sit on top of frame 1 */
-.tradeshow-frame:not(:first-child) {
     position: absolute;
     top: 0;
     left: 0;
+}
+/* frame 5 and any other non active frame sit on top of frame 1 */
+.tradeshow-frame:not(:first-child) {
     visibility: hidden;
     opacity: 0;
 }
@@ -989,6 +990,7 @@ h3.lookbook__title {
 }
   .tradeshow-animation {
     width: 65%;
+    padding-top: calc(784 / 1537 * 100%);
   }
 
 }
@@ -1145,7 +1147,7 @@ h3.lookbook__title {
 
   .slider-wrapper {
     padding: 0 1rem;
-     background:none;
+    background:none;
   }
 
   .prev,
@@ -1154,9 +1156,13 @@ h3.lookbook__title {
     }
 
   .shop-now-btn, .btn--secondary {
-     padding: 12px 28px;
+    padding: 12px 28px;
     font-size: 1.25rem;
     width: 90%;
+  }
+
+  .homepage-main {
+    margin-bottom: 1rem;
   }
 
   .rewind-main .shop-now-btn, .adventure-main .shop-now-btn {
@@ -1284,6 +1290,7 @@ h3.lookbook__title {
 
   .tradeshow-animation {
     width: 100%;
+     padding-top: calc(1209 / 1537 * 100%);
   }
 }
 
