@@ -966,7 +966,7 @@ h3.lookbook__title {
    transform: translateX(53.33%);
 }
 
- .mindset-collection .shirt-item:last-child {
+ .mindset-main .shirt-item:last-child {
    transform: translateX(108.33%);
  }
 }
