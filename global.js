@@ -162,3 +162,35 @@ document.addEventListener('DOMContentLoaded', () => {
 
     observer.observe(tradeshow);
 });
+
+document.addEventListener('DOMContentLoaded', () => {
+    const mindsetPage = document.querySelector('.mindset-page');
+
+    if (!mindsetPage) return;
+
+    const whiteGrid = mindsetPage.querySelector('.white');
+    const blackGrid = mindsetPage.querySelector('.black');
+    const toggleButtons = mindsetPage.querySelectorAll('.color-toggle');
+
+    toggleButtons.forEach(button => {
+        button.addEventListener('click', () => {
+            const color = button.dataset.color;
+
+            if (color === 'white') {
+                whiteGrid.style.display = 'grid';
+                blackGrid.style.display = 'none';
+            }
+
+            if (color === 'black') {
+                whiteGrid.style.display = 'none';
+                blackGrid.style.display = 'grid';
+            }
+
+            toggleButtons.forEach(btn => {
+                btn.classList.remove('active');
+            });
+
+            button.classList.add('active');
+        });
+    });
+});
