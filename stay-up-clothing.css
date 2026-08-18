@@ -308,8 +308,34 @@ a {
  grid-template-columns: repeat(3, 1fr);
 }
 
-.shirt-grid.black {
+.black {
   display: none;
+}
+
+.shirt-color-toggle {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 25px 0 30px;
+}
+
+.color-toggle {
+    background: transparent;
+    border: 2px solid #222;
+    border-radius: 8px;
+    padding: 11px 20px;
+    font-family: inherit;
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    cursor: pointer;
+    color: #222;
+    transition: all 0.2s ease;
+}
+
+.color-toggle.active {
+   background: #222;
+    color: #fff;
 }
 
 
