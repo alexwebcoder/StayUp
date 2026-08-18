@@ -278,7 +278,7 @@ a {
    font-size: 2rem;
 }
 
-.rewind-main .shop-now-btn, .adventure-main .shop-now-btn {
+.rewind-main .shop-now-btn, .adventure-main .shop-now-btn, .mindset-main .shop-now-btn {
   margin-bottom: 0;
 }
 
@@ -1330,6 +1330,11 @@ h3.lookbook__title {
   .tradeshow-animation {
     width: 100%;
      padding-top: calc(1209 / 1537 * 100%);
+  }
+
+  .shirt-color-toggle {
+    flex-direction: column;
+    margin:1rem;
   }
 }
 
