@@ -308,6 +308,10 @@ a {
  grid-template-columns: repeat(3, 1fr);
 }
 
+.shirt-grid.black {
+  display: none;
+}
+
 
 .shirt-item {
   padding-top: calc(2000 / 2000 * 100%);
