@@ -278,12 +278,12 @@ a {
    font-size: 2rem;
 }
 
-.rewind-main .shop-now-btn, .adventure-main .shop-now-btn, .mindset-main .shop-now-btn {
+.rewind-main .shop-now-btn, .adventure-main .shop-now-btn, .mindset-main .shop-now-btn, .principles-main .shop-now-btn {
   margin-bottom: 0;
 }
 
 
-.adventure-collection, .principles-collection, .rewind-collection, .mindset-collection {
+.adventure-collection, .principles-collection, .rewind-collection, .mindset-collection, .principles-collection {
   background-image:
    linear-gradient(to right, #f0f0f0 1px, transparent 1px),
    linear-gradient(to bottom, #f0f0f0 1px, transparent 1px);
@@ -292,7 +292,7 @@ a {
  
 }
 
-.adventure-collection .container, .principles-collection .container, .rewind-collection .container, .mindset-collection .container {
+.adventure-collection .container, .principles-collection .container, .rewind-collection .container, .mindset-collection .container, .principles-collection .container {
   max-width: 1400px;
   margin: 0 auto;
   padding: 1rem 1rem 0 1rem;
@@ -469,7 +469,7 @@ a {
   margin: 0 0 1rem 0;
 }
 
-.rewind-page .shop-now-bottom, .adventure-page .shop-now-bottom, .mindset-page .shop-now-bottom {
+.rewind-page .shop-now-bottom, .adventure-page .shop-now-bottom, .mindset-page .shop-now-bottom, .princicples-page .shop-now-bottom {
   margin-top: 1rem;
 }
 
