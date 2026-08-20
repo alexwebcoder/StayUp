@@ -411,6 +411,7 @@ a {
 
 .banner-section.principles-image {
   margin-bottom: .75rem;
+  overflow: hidden;
 }
 
 .video-figure, .banner-figure {
