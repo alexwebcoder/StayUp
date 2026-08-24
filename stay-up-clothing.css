@@ -29,6 +29,10 @@ h1 {
     padding: 0;
   }
 
+  .collection-page .collection-header {
+    padding: 0 .5rem;
+  }
+
 h2, h3 {
   font-size: 1.875rem;
   font-weight: 600;
@@ -285,7 +289,7 @@ a {
    linear-gradient(to right, #f0f0f0 1px, transparent 1px),
    linear-gradient(to bottom, #f0f0f0 1px, transparent 1px);
   background-size: 20px 20px;
-  margin: 1rem 0 1rem 0;
+  margin: 1.5rem 0 1rem 0;
  
 }
 
@@ -1215,10 +1219,6 @@ h3.lookbook__title {
     padding: 12px 28px;
     font-size: 1.25rem;
     width: 90%;
-  }
-
-  .rewind-main .shop-now-btn, .adventure-main .shop-now-btn {
-    margin-top: 1rem;
   }
 
   .tagline {
