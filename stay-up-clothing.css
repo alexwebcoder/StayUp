@@ -251,9 +251,6 @@ a {
 .prev { left: 10px; }
 .next { right: 10px; }
 
-
-/* shop now button */
-
 .shop-btn-container {
   text-align: center;
 }
@@ -467,11 +464,7 @@ a {
 
 .shop-now-bottom {
   text-align: center;
-  margin: 0 0 1rem 0;
-}
-
-.rewind-page .shop-now-bottom, .adventure-page .shop-now-bottom, .mindset-page .shop-now-bottom, .principles-page .shop-now-bottom {
-  margin-top: 1rem;
+  margin: 2rem 0 2rem 0;
 }
 
 /* secondary shop now collection */
@@ -528,7 +521,7 @@ a {
 
 h3.lookbook__title {
   color: #444;
-  font-size: clamp(2rem, 4vw, 3.5rem);
+  font-size: clamp(2.5rem, 4vw, 3.5rem);
     font-weight: 800;
     letter-spacing: 0.04em;
     margin: 2rem auto;
@@ -578,6 +571,7 @@ h3.lookbook__title {
     width: 35%;
     overflow: hidden;
     padding-top: calc(395 / 1537 * 100%);
+    border-radius: 10px;
 }
 
 .tradeshow-frame {
@@ -907,7 +901,7 @@ h3.lookbook__title {
   background-color: #260326;
   color: #fff;
   text-align: center;
-  padding: 2rem 1rem;
+  padding: 3rem 1rem 2rem 1rem;
 }
 
 .email-banner h2 {
@@ -1006,6 +1000,28 @@ h3.lookbook__title {
     .slides a {
         flex: 0 0 45%;
     }
+    
+}
+
+@media (min-width: 769px) {
+
+  .slider-wrapper {
+    margin: 2rem 0 0 0;
+  }
+
+  .homepage-main .shop-btn-container {
+    margin-bottom: 2rem;
+  }
+
+  .prev:hover,
+  .next:hover {
+    background-color: #95adc6;
+  }
+
+  .shop-now-bottom {
+    display: none;
+  }
+    
 }
 
 @media (min-width: 1200px) {
@@ -1201,10 +1217,6 @@ h3.lookbook__title {
     width: 90%;
   }
 
-  .homepage-main {
-    margin-bottom: 1rem;
-  }
-
   .rewind-main .shop-now-btn, .adventure-main .shop-now-btn {
     margin-top: 1rem;
   }
@@ -1383,17 +1395,5 @@ h3.lookbook__title {
 @media (max-width: 340px) {
   .tagline {
     display:none;
-  }
-}
-
-
-@media (min-width: 769px) {
-  .prev:hover,
-  .next:hover {
-    background-color: #95adc6;
-  }
-
-  .shop-now-bottom {
-    display: none;
   }
 }
