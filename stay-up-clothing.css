@@ -740,6 +740,26 @@ h3.lookbook__title {
 
 /* contact page */
 
+.contact-us {
+    position: relative;
+    background: none;
+}
+
+.contact-us::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: url(Images/stay_up_clothing_desktop_bg.jpg) no-repeat center center fixed;
+    background-size: cover;
+    opacity: 0.2;
+    z-index: 0;
+}
+
+.contact-us > * {
+    position: relative;
+    z-index: 1;
+}
+
 .contact-left-title h1 {
   font-weight: 600;
   margin-bottom: 5px;
