@@ -749,7 +749,7 @@ h3.lookbook__title {
     content: "";
     position: absolute;
     inset: 0;
-    background: url(Images/stay_up_clothing_desktop_bg.jpg) no-repeat center center fixed;
+    background: url(Images/stay_up_clothing_desktop_bg.jpg) no-repeat center center;
     background-size: cover;
     opacity: 0.2;
     z-index: 0;
@@ -1302,6 +1302,10 @@ h3.lookbook__title {
 .story-image.alex img {
   max-width: 300px;
 }
+
+.contact-us::before {
+        background-position: 67% center;
+    }
 
 }
 
