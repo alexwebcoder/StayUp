@@ -1183,7 +1183,7 @@ h3.lookbook__title {
 @media (max-width: 768px) {
 
   .free-shipping-bar {
-    padding:4px 0;
+    padding:2px 0;
   }
 
   .site-header {
@@ -1193,7 +1193,7 @@ h3.lookbook__title {
     top: 0;
     z-index: 1000;
     transition: all 0.3s ease;
-    padding: .5rem 1rem;
+    padding: .3rem 1rem;
   }
 
   .header-left {
@@ -1230,7 +1230,7 @@ h3.lookbook__title {
   .site-header.scrolled {
     background-color: rgba(40, 0, 60, 0.85);
   box-shadow: 0 2px 6px rgba(0,0,0,0.4);
-  padding: 2.5rem 1rem .2rem 1rem;
+  padding: 1.7rem 1rem .2rem 1rem;
 }
 
   .site-header.scrolled .tagline {
