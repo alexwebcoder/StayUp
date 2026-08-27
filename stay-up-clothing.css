@@ -1092,13 +1092,38 @@ h3.lookbook__title {
         background: none;
         border: none;
         color: white;
-        padding: 0 0 .3rem 0;
         cursor: pointer;
     }
 
     .hamburger {
         font-size: 2rem;
     }
+
+    .hamburger.mobile-menu-close {
+    width: 22px;
+    height: 22px;
+    position: relative;
+    display: inline-block;
+}
+
+.hamburger.mobile-menu-close::before,
+.hamburger.mobile-menu-close::after {
+    content: "";
+    position: absolute;
+    width: 22px;
+    height: 2px;
+    background: white;
+    top: 50%;
+    left: 0;
+}
+
+.hamburger.mobile-menu-close::before {
+    transform: rotate(45deg);
+}
+
+.hamburger.mobile-menu-close::after {
+    transform: rotate(-45deg);
+}
 
     .mobile-nav {
         position: absolute;
@@ -1187,17 +1212,20 @@ h3.lookbook__title {
 
   .header-left .logo {
     height: 50px;
+    position: relative;
+    top: 2px;
   }
 
   .site-header.scrolled .logo {
     height: 40px;
     transition: height 0.3s ease;
+    top: .5px;
   }
 
   .site-header.scrolled {
     background-color: rgba(40, 0, 60, 0.85);
   box-shadow: 0 2px 6px rgba(0,0,0,0.4);
-  padding: 2.7rem 0 0 0;
+  padding: 2.5rem 1rem .2rem 1rem;
 }
 
   .site-header.scrolled .tagline {

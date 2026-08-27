@@ -54,9 +54,11 @@ document.addEventListener("DOMContentLoaded", () => {
         menuButton.setAttribute('aria-expanded', isOpen);
 
         if (isOpen) {
-            hamburger.textContent = 'X';
+            hamburger.textContent = '';
+            hamburger.classList.add('mobile-menu-close');
         } else {
             hamburger.textContent = '☰';
+            hamburger.classList.remove('mobile-menu-close');
         }
 
     });
