@@ -1089,22 +1089,15 @@ h3.lookbook__title {
   }
  
     .mobile-menu-toggle {
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: .5rem;
         background: none;
         border: none;
         color: white;
-        font-size: 1rem;
-        letter-spacing: 1px;
         padding: 0 0 .3rem 0;
         cursor: pointer;
     }
 
     .hamburger {
-        font-size: 1.5rem;
+        font-size: 2rem;
     }
 
     .mobile-nav {
@@ -1126,7 +1119,7 @@ h3.lookbook__title {
     }
 
     .mobile-share {
-      margin-bottom: -10px;
+      margin-bottom: 1rem;
     }
 
     .mobile-nav a {
@@ -1138,15 +1131,6 @@ h3.lookbook__title {
 
     .mobile-nav a:first-child {
       padding-top: 1rem;
-    }
-
-    .mobile-menu-close {
-        background: none;
-        border: none;
-        color: white;
-        font-size: 2rem;
-        cursor: pointer;
-        padding-bottom: 10px;
     }
 
     .mobile-nav.open {

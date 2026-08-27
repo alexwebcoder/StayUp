@@ -43,28 +43,24 @@ window.addEventListener("scroll", () => {
 })
 
 document.addEventListener("DOMContentLoaded", () => {
- const menuButton = document.querySelector('.mobile-menu-toggle');
-const mobileNav = document.querySelector('.mobile-nav');
-const closeButton = document.querySelector('.mobile-menu-close');
+    const menuButton = document.querySelector('.mobile-menu-toggle');
+    const mobileNav = document.querySelector('.mobile-nav');
+    const hamburger = document.querySelector('.hamburger');
 
+    menuButton.addEventListener('click', () => {
 
-menuButton.addEventListener('click', () => {
+        const isOpen = mobileNav.classList.toggle('open');
 
-    mobileNav.classList.add('open');
-    menuButton.setAttribute('aria-expanded', 'true');
+        menuButton.setAttribute('aria-expanded', isOpen);
 
+        if (isOpen) {
+            hamburger.textContent = 'X';
+        } else {
+            hamburger.textContent = '☰';
+        }
+
+    });
 });
-
-
-closeButton.addEventListener('click', () => {
-
-    mobileNav.classList.remove('open');
-    menuButton.setAttribute('aria-expanded', 'false');
-
-});
-
-});
-
 
 document.addEventListener('DOMContentLoaded', () => {
     const home = document.querySelector('.home-wrapper');
