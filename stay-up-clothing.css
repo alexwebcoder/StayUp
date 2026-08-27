@@ -1181,6 +1181,11 @@ h3.lookbook__title {
 
 
 @media (max-width: 768px) {
+
+  .free-shipping-bar {
+    padding:4px 0;
+  }
+
   .site-header {
     flex-direction: row;
     text-align: center;
