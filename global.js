@@ -68,7 +68,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const home = document.querySelector('.home-wrapper');
     if (!home) return;
 
-    const image = home.querySelector('.banner-image');
+    const image = home.querySelector('.banner-image.principles');
     
     if (!image) return;
 
