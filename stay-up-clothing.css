@@ -407,6 +407,12 @@ a {
   background: none;
   padding-top: 1rem;
   margin-bottom: 1.5rem;
+   position: relative;
+  padding-top: calc(1024/1536 * 100%);
+}
+
+.comic-image figure {
+ 
 }
 
 .banner-section.principles-image {
@@ -455,6 +461,12 @@ a {
 
 .banner-image.comic {
   max-width: 850px;
+  position: absolute;
+  top:0;
+  left:0;
+  right:0;
+  bottom: 0;
+  margin:auto;
 }
 
 .about-page-main .shop-now-btn {
