@@ -403,6 +403,14 @@ a {
   padding: 2rem;
 }
 
+.banner-section.comic-image {
+  background: none;
+}
+
+.comic-image {
+  padding-top: 1rem;
+}
+
 .banner-section.principles-image {
   margin-bottom: .75rem;
   overflow: hidden;
@@ -445,6 +453,10 @@ a {
   display: block;
   margin: 0 auto;
   border-radius: 8px;
+}
+
+.banner-image.comic {
+  max-width: 850px;
 }
 
 .about-page-main .shop-now-btn {
@@ -1022,7 +1034,7 @@ h3.lookbook__title {
 @media (min-width: 769px) {
 
   .slider-wrapper {
-    margin: 2rem 0 0 0;
+    margin: 3rem 0 1rem 0;
   }
 
   .homepage-main .shop-btn-container {
@@ -1211,6 +1223,10 @@ h3.lookbook__title {
     display: none;
   }
 
+  .hero-message-mobile {
+    margin-bottom: 2rem;
+  }
+
   .banner-section {
     padding: 1rem;
   }
@@ -1256,6 +1272,10 @@ h3.lookbook__title {
     padding: 12px 28px;
     font-size: 1.25rem;
     width: 90%;
+  }
+
+  .homepage-main .shop-now-btn {
+    margin: 1.5rem 0;
   }
 
   .tagline {
