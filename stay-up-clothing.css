@@ -405,10 +405,8 @@ a {
 
 .banner-section.comic-image {
   background: none;
-}
-
-.comic-image {
   padding-top: 1rem;
+  margin-bottom: 1.5rem;
 }
 
 .banner-section.principles-image {
@@ -1048,6 +1046,10 @@ h3.lookbook__title {
 
   .shop-now-bottom {
     display: none;
+  }
+
+  .banner-section.comic-image {
+    margin-bottom: 3rem;
   }
     
 }
