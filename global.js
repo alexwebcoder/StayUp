@@ -80,7 +80,7 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     }, {
-        threshold: 0.7
+        threshold: 1
     });
 
     observer.observe(image);
@@ -128,7 +128,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const observer = new IntersectionObserver((entries, observer) => {
         if (entries[0].isIntersecting) {
-
             // Start frame 1 animation NOW
             frame1.classList.add('active');
 
