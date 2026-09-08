@@ -714,6 +714,10 @@ h3.lookbook__title {
   overflow: hidden;
 }
 
+.story-image.alex {
+  margin-bottom: 0;
+}
+
 .story-image img {
   display: block;
   width: 100%;
