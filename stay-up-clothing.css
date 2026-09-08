@@ -512,6 +512,63 @@ a {
   cursor: pointer;
 }
 
+
+
+/* =========================================
+VERB COLLECTION - THIRD IMAGE FLIP
+========================================= */
+
+.verb-flip {
+perspective: 1000px;
+}
+
+/* The element that actually rotates */
+.verb-flip .flip-inner {
+position: relative;
+width: 100%;
+height: 100%;
+transform-style: preserve-3d;
+transition: transform 0.6s ease;
+}
+
+/* Flip on hover */
+.verb-flip:hover .flip-inner {
+transform: rotateY(180deg);
+}
+
+/* Front and back occupy the same space */
+.verb-flip .flip-front,
+.verb-flip .flip-back {
+width: 100%;
+backface-visibility: hidden;
+-webkit-backface-visibility: hidden;
+}
+
+/* Front */
+.verb-flip .flip-front {
+position: relative;
+z-index: 2;
+}
+
+/* Back */
+.verb-flip .flip-back {
+position: absolute;
+top: 0;
+left: 0;
+transform: rotateY(180deg);
+}
+
+/* Make both images behave like your existing thumbnails */
+.verb-flip .flip-front img,
+.verb-flip .flip-back img {
+display: block;
+width: 100%;
+height: auto;
+border-radius: 8px;
+box-shadow: 0 6px 18px rgba(0, 0, 0, 0.35);
+}
+
+
 /* Masonry Collage */
 
 .lookbook__grid {
