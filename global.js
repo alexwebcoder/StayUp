@@ -191,3 +191,16 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 });
+
+document.addEventListener('DOMContentLoaded', () => {
+   document.querySelectorAll('.verb-flip').forEach(card => {
+    card.addEventListener('click', function (e) {
+        if (window.matchMedia('(hover: none)').matches) {
+            if (!card.classList.contains('touch-flipped')) {
+                e.preventDefault();
+                card.classList.add('touch-flipped');
+            }
+        }
+    });
+});
+});
