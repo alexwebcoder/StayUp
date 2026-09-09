@@ -193,14 +193,24 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 document.addEventListener('DOMContentLoaded', () => {
-   document.querySelectorAll('.verb-flip').forEach(card => {
+  document.querySelectorAll('.verb-flip').forEach(card => {
+
     card.addEventListener('click', function (e) {
+
         if (window.matchMedia('(hover: none)').matches) {
+
+            // First tap: flip the card and prevent the Etsy link
             if (!card.classList.contains('touch-flipped')) {
                 e.preventDefault();
                 card.classList.add('touch-flipped');
             }
+
+            // Second tap: flip back and allow the Etsy link
+            else {
+                card.classList.remove('touch-flipped');
+            }
         }
     });
+
 });
 });
