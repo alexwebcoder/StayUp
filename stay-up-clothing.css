@@ -277,16 +277,17 @@ a {
 }
 
 
-.collection-section {
+.adventure-collection, .principles-collection, .rewind-collection, .mindset-collection, .principles-collection, .verb-collection {
   margin: 1.5rem 0 1rem 0;
  
 }
 
-.collection-container {
+.adventure-collection .container, .principles-collection .container, .rewind-collection .container, .mindset-collection .container, .principles-collection .container, .verb-collection .container {
   max-width: 1400px;
   margin: 0 auto;
   padding: 1rem 1rem 0 1rem;
 }
+
 
 .collection-link-parent.last {
   margin-bottom: 1.5rem;
