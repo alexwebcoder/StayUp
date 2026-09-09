@@ -288,6 +288,10 @@ a {
   padding: 1rem 1rem 0 1rem;
 }
 
+.collection-page .shop-btn-container+section {
+  margin: 2.5rem 0;
+}
+
 
 .collection-link-parent.last {
   margin-bottom: 1.5rem;
@@ -1146,6 +1150,12 @@ h3.lookbook__title {
     }
 }
 
+@media (max-width: 1416px) {
+ .collection-page .shop-btn-container+section {
+    padding: 0 1rem;
+}
+}
+
 @media (max-width: 1360px) {
    .video-figure, .banner-figure {
   width: 100%;
@@ -1256,6 +1266,9 @@ h3.lookbook__title {
       width: 23px;
       height: 23px;
   }
+  .collection-page .shop-btn-container+section {
+      margin: 2rem 0;
+    }
 }
 
 
@@ -1451,6 +1464,10 @@ h3.lookbook__title {
      gap: 1.5rem;
     justify-items: center;
   }
+
+  .collection-page .shop-btn-container+section {
+        padding: 0;
+    }
 
   .shirt-item {
         width: 80%;
