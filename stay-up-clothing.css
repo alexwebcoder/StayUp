@@ -555,6 +555,7 @@ VERB COLLECTION - THIRD IMAGE FLIP
     width: 100%;
     backface-visibility: hidden;
     -webkit-backface-visibility: hidden;
+     transform-style: preserve-3d;
 }
 
 /* Front */
