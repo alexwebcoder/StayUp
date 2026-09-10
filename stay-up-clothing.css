@@ -190,6 +190,7 @@ a {
 .slider-wrapper {
   background-size: 20px 20px;
   padding: 2rem;
+  position: relative;
 }
 
 .slider {
@@ -233,20 +234,25 @@ a {
 }
 
 .prev, .next {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background: rgba(0,0,0,0.5);
-  color: #fff;
-  border: none;
-  font-size: 24px;
-  cursor: pointer;
-  padding: 6px 10px;
-  z-index: 10;
+   position: absolute;
+    bottom: -58px;
+    transform: translateY(-50%);
+    width: 48px;
+    height: 48px;
+    background: #fff;
+    color: #000;
+    border: 2px solid #000;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 0;
+    z-index: 10;
+    box-shadow: 5px 5px 0 #000;
+    transition: box-shadow 0.15s ease, transform 0.15s ease;
 }
 
-.prev { left: 10px; }
-.next { right: 10px; }
+.prev { left: 80px; }
+.next { right: 80px; }
 
 .shop-btn-container {
   text-align: center;
@@ -1121,7 +1127,7 @@ h3.lookbook__title {
 
   .prev:hover,
   .next:hover {
-    background-color: #95adc6;
+      box-shadow: 9px 9px 0 #000;
   }
 
   .shop-now-bottom {
