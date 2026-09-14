@@ -410,6 +410,11 @@ a {
   padding: 2rem;
 }
 
+.banner-section.lion-image {
+  background: none;
+  border: 2px solid red;
+}
+
  .banner-section.comic-image {
   background: none;
   padding-top: 1rem;
@@ -425,7 +430,7 @@ a {
     object-fit: contain;
 }
 
-.banner-section.principles-image {
+.banner-section.principles-image, .banner-section.lion-image {
   margin-bottom: .75rem;
   overflow: hidden;
 }
@@ -435,6 +440,12 @@ a {
   width: 48%;
   display: flex;
   position: relative;
+}
+
+.banner-figure.lion-figure {
+  aspect-ratio: 2876/2000;
+  justify-content: center;
+  align-items: center;
 }
 
 .zoom-video .banner-video {
@@ -467,6 +478,10 @@ a {
   display: block;
   margin: 0 auto;
   border-radius: 8px;
+}
+
+.lion-tee {
+  max-width: 800px;
 }
 
 .about-page-main .shop-now-btn {
