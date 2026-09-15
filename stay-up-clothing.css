@@ -432,8 +432,8 @@ a {
 
 .banner-section.lion-image {
   background: none;
-  border: 2px solid red;
   margin-bottom: 0;
+  padding-top: 0;
 }
 
 .video-figure, .banner-figure {
@@ -449,7 +449,6 @@ a {
   max-width: 1200px;
   justify-content: center;
   align-items: center;
-  border: 2px solid green;
 }
 
 .lion-figure .shirt-link {
@@ -493,22 +492,14 @@ a {
 }
 
 .lion-shirt-images {
-
   position: relative;
-
   width: 100%;
-
   display: flex;
-
   justify-content: center;
-
 }
 
-.lion-shirt-folded,
-.lion-shirt-hanger {
-
+.lion-shirt-folded {
   display: none;
-
 }
 
 .lion-shirt-images {
@@ -519,7 +510,8 @@ a {
 }
 
 .lion-shirt-main {
-  transition: opacity .3s ease;
+ opacity: 1;
+ animation: lion-main-fade 12s ease-in-out infinite;
 }
 
 .lion-shirt-folded {
@@ -529,19 +521,35 @@ a {
   left: 50%;
   transform: translateX(-50%);
   opacity: 0;
-  transition: opacity .3s ease;
+  animation: lion-folded-fade 12s ease-in-out infinite;
 }
 
-.lion-shirt-images:hover .lion-shirt-main {
-  opacity: 0;
+@keyframes lion-main-fade {
+  0%, 35% {
+    opacity: 1;
+  }
+
+  50%, 85% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
 }
 
-.lion-shirt-images:hover .lion-shirt-folded {
-  opacity: 1;
-}
+@keyframes lion-folded-fade {
+  0%, 35% {
+    opacity: 0;
+  }
 
-.lion-shirt-hanger {
-  display: none;
+  50%, 85% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
 }
 
 .about-page-main .shop-now-btn {
