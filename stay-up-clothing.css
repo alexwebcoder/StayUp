@@ -451,7 +451,7 @@ a {
   justify-content: center;
   align-items: center;
   position: relative;
-  top: -16px;
+  top: -26px;
 }
 
 .lion-figure .shirt-link {
@@ -1240,6 +1240,7 @@ h3.lookbook__title {
 @media (min-width: 2067px) {
     .slides a {
         max-width: 570px;
+        margin-right: 12px;
     }
 }
 
@@ -1377,6 +1378,11 @@ h3.lookbook__title {
 
 
 @media (max-width: 768px) {
+
+  
+.banner-figure.lion-figure {
+  top: -16px;
+}
 
   .free-shipping-bar {
     padding:2px 0;
