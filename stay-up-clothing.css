@@ -417,6 +417,8 @@ a {
   aspect-ratio: 1536 / 1024;
   margin:0 auto 1.5rem;
   width: 100%;
+  position: relative;
+  z-index: 2;
 }
 
 .banner-image.comic {
@@ -428,6 +430,8 @@ a {
 .banner-section.principles-image {
   margin-bottom: .75rem;
   overflow: hidden;
+  position: relative;
+  z-index: 2;
 }
 
 .banner-section.lion-image {
@@ -450,8 +454,6 @@ a {
   max-width: 1200px;
   justify-content: center;
   align-items: center;
-  position: relative;
-  top: -26px;
 }
 
 .lion-figure .shirt-link {
@@ -515,12 +517,14 @@ a {
 .lion-shirt-main {
  opacity: 1;
  animation: lion-main-fade 12s ease-in-out infinite;
+ position: relative;
+ top: -21px;
 }
 
 .lion-shirt-folded {
   display: block;
   position: absolute;
-  top: 0;
+  top: -20px;
   left: 50%;
   transform: translateX(-50%);
   opacity: 0;
@@ -1373,6 +1377,16 @@ h3.lookbook__title {
   
   .about-text p {
     width: auto;
+  }
+
+  .lion-tee {
+    top: 4px;
+    max-width: 80%;
+  }
+
+  .lion-shirt-folded {
+     max-width: 82%;
+     top: 0px;
   }
 }
 
