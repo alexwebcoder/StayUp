@@ -410,11 +410,6 @@ a {
   padding: 2rem;
 }
 
-.banner-section.lion-image {
-  background: none;
-  border: 2px solid red;
-}
-
  .banner-section.comic-image {
   background: none;
   padding-top: 1rem;
@@ -435,6 +430,12 @@ a {
   overflow: hidden;
 }
 
+.banner-section.lion-image {
+  background: none;
+  border: 2px solid red;
+  margin-bottom: 0;
+}
+
 .video-figure, .banner-figure {
   aspect-ratio: 16 / 9;
   width: 48%;
@@ -444,8 +445,15 @@ a {
 
 .banner-figure.lion-figure {
   aspect-ratio: 2876/2000;
+  width: 100%;
+  max-width: 1200px;
   justify-content: center;
   align-items: center;
+  border: 2px solid green;
+}
+
+.lion-figure .shirt-link {
+  top:unset
 }
 
 .zoom-video .banner-video {
@@ -481,7 +489,26 @@ a {
 }
 
 .lion-tee {
-  max-width: 800px;
+  max-width: 74%;
+}
+
+.lion-shirt-images {
+
+  position: relative;
+
+  width: 100%;
+
+  display: flex;
+
+  justify-content: center;
+
+}
+
+.lion-shirt-folded,
+.lion-shirt-hanger {
+
+  display: none;
+
 }
 
 .about-page-main .shop-now-btn {
