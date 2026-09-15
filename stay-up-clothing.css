@@ -425,7 +425,7 @@ a {
     object-fit: contain;
 }
 
-.banner-section.principles-image, .banner-section.lion-image {
+.banner-section.principles-image {
   margin-bottom: .75rem;
   overflow: hidden;
 }
@@ -434,6 +434,7 @@ a {
   background: none;
   margin-bottom: 0;
   padding-top: 0;
+  overflow: visible;
 }
 
 .video-figure, .banner-figure {
@@ -449,6 +450,8 @@ a {
   max-width: 1200px;
   justify-content: center;
   align-items: center;
+  position: relative;
+  top: -16px;
 }
 
 .lion-figure .shirt-link {
