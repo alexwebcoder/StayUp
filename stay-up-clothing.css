@@ -511,6 +511,39 @@ a {
 
 }
 
+.lion-shirt-images {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.lion-shirt-main {
+  transition: opacity .3s ease;
+}
+
+.lion-shirt-folded {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+  transition: opacity .3s ease;
+}
+
+.lion-shirt-images:hover .lion-shirt-main {
+  opacity: 0;
+}
+
+.lion-shirt-images:hover .lion-shirt-folded {
+  opacity: 1;
+}
+
+.lion-shirt-hanger {
+  display: none;
+}
+
 .about-page-main .shop-now-btn {
   width: 100%;
   padding: 30px;
