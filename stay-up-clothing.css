@@ -457,7 +457,8 @@ a {
 }
 
 .lion-figure .shirt-link {
-  top:unset
+  top:unset;
+  width: 74%;
 }
 
 .zoom-video .banner-video {
@@ -492,9 +493,6 @@ a {
   border-radius: 8px;
 }
 
-.lion-tee {
-  max-width: 74%;
-}
 
 .lion-shirt-images {
   position: relative;
@@ -1379,14 +1377,13 @@ h3.lookbook__title {
     width: auto;
   }
 
-  .lion-tee {
-    top: 4px;
-    max-width: 80%;
+  .lion-figure .shirt-link {
+    width: 85%;
   }
 
-  .lion-shirt-folded {
-     max-width: 82%;
-     top: 0px;
+  .lion-tee {
+    top: 4px;
+    max-width: 100%;
   }
 }
 
