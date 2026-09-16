@@ -90,35 +90,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const home = document.querySelector('.home-wrapper');
     if (!home) return;
 
-   const bannerVideo = home.querySelector('.banner-video');
-
-if (bannerVideo) {
-    const videoObserver = new IntersectionObserver((entries, observer) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                const videoSource = document.createElement('source');
-                videoSource.src = bannerVideo.dataset.src;
-                videoSource.type = 'video/mp4';
-
-                bannerVideo.appendChild(videoSource);
-                bannerVideo.load();
-                bannerVideo.play();
-
-                observer.unobserve(bannerVideo);
-            }
-        });
-    }, {
-        rootMargin: '1600px 0px'
-    });
-
-    videoObserver.observe(bannerVideo);
-}
-});
-
-document.addEventListener('DOMContentLoaded', () => {
-    const home = document.querySelector('.home-wrapper');
-    if (!home) return;
-
     const tradeshow = home.querySelector('.tradeshow-animation');
     const tradeshowFrames = home.querySelectorAll('.tradeshow-frame');
 
