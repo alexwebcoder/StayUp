@@ -446,6 +446,7 @@ a {
   width: 48%;
   display: flex;
   position: relative;
+  justify-content: center;
 }
 
 .banner-figure.lion-figure {
@@ -461,12 +462,15 @@ a {
   width: 74%;
 }
 
+.shirt-link.principles-shirt {
+  width: 56%;
+}
+
 .zoom-video .banner-video {
   max-width: none;
 }
 
 .zoom-image .banner-image {
-  max-width: 56%;
   transform: scale(1);
 }
 
