@@ -493,7 +493,6 @@ a {
   border-radius: 8px;
 }
 
-
 .lion-shirt-images {
   position: relative;
   width: 100%;
@@ -510,6 +509,10 @@ a {
   width: 100%;
   display: flex;
   justify-content: center;
+}
+
+.lion-tee {
+  max-width: 100%;
 }
 
 .lion-shirt-main {
@@ -1381,19 +1384,25 @@ h3.lookbook__title {
     width: 85%;
   }
 
-  .lion-tee {
-    top: 4px;
-    max-width: 100%;
+  .lion-shirt-main {
+    top: -22px;
+    max-width: 90%;
+  }
+  .lion-shirt-folded {
+    top: -42px;
   }
 }
 
 
 @media (max-width: 768px) {
 
-  
-.banner-figure.lion-figure {
-  top: -16px;
-}
+  .lion-shirt-folded {
+    top: -33px;
+  }
+
+  .lion-shirt-main {
+    top: -17px;
+  }
 
   .free-shipping-bar {
     padding:2px 0;
@@ -1614,6 +1623,14 @@ h3.lookbook__title {
 }
 
 @media (max-width: 450px) {
+
+  .lion-shirt-folded {
+    top: -27px;
+  }
+
+  .lion-shirt-main {
+    top: -13px;
+  }
 
     .tradeshow-frame.transitioning {
         transform: translateX(-45px) scale(1.14);
