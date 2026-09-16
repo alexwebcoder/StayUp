@@ -1247,6 +1247,17 @@ h3.lookbook__title {
         max-width: 570px;
         margin-right: 12px;
     }
+    .prev, .next {
+      width: 65px;
+      height: 65px;
+      bottom: -141px;
+    }
+    .prev {
+      left: 109px;
+    }
+    .next {
+      right: 109px
+    }
 }
 
 @media (max-width: 1416px) {
