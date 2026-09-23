@@ -1200,7 +1200,7 @@ h3.lookbook__title {
    transform: translateX(53.33%);
 }
 
- .mindset-main .shirt-item:last-child {
+ .mindset-main .shirt-item:last-child, .verb-main .shirt-item:last-child {
    transform: translateX(108.33%);
  }
 }
@@ -1574,6 +1574,10 @@ h3.lookbook__title {
 }
 
 @media (min-width: 600px) and (max-width: 960px) {
+
+   .verb-main .shirt-item:last-child {
+   transform: translateX(50%);
+ }
 
     .shirt-grid {
         grid-template-columns: repeat(2, 1fr);
