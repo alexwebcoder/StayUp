@@ -185,3 +185,47 @@ document.addEventListener('DOMContentLoaded', () => {
 
 });
 });
+
+document.addEventListener('DOMContentLoaded', () => {
+  if (window.innerWidth <= 768) {
+
+    const heroMessage = document.querySelector('.hero-message-mobile');
+
+    const observer = new IntersectionObserver((entries) => {
+
+        entries.forEach(entry => {
+
+            if (entry.isIntersecting) {
+
+                setTimeout(() => {
+
+                    window.scrollBy({
+                        top: 145,
+                        behavior: 'smooth'
+                    });
+
+                    setTimeout(() => {
+
+                        window.scrollBy({
+                            top: -145,
+                            behavior: 'smooth'
+                        });
+
+                    }, 800);
+
+                }, 3250);
+
+                observer.disconnect(); // only run once
+
+            }
+
+        });
+
+    }, {
+        threshold: 0.5
+    });
+
+    observer.observe(heroMessage);
+
+}
+});
