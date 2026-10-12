@@ -168,7 +168,7 @@ a {
     justify-content: center;
     align-items: center;
     background: linear-gradient(90deg, rgba(255, 255, 255, 0)0%, #fff 100%);
-    cursor: pointer;
+    cursor: pointer;t-Im
     z-index: 9;
 }
 
@@ -285,10 +285,13 @@ a {
 
 .adventure-collection, .principles-collection, .rewind-collection, .mindset-collection, .principles-collection, .verb-collection {
   margin: 1.5rem 0 1rem 0;
- 
 }
 
-.adventure-collection .container, .principles-collection .container, .rewind-collection .container, .mindset-collection .container, .principles-collection .container, .verb-collection .container {
+.tote-bag-collection {
+   margin: 0 0 2.25rem 0;
+}
+
+.adventure-collection .container, .principles-collection .container, .rewind-collection .container, .mindset-collection .container, .principles-collection .container, .verb-collection .container, .tote-bag-collection .container {
   max-width: 1400px;
   margin: 0 auto;
   padding: 1rem 1rem 0 1rem;
