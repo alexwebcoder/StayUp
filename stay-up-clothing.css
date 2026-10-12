@@ -289,6 +289,11 @@ a {
 
 .tote-bag-collection {
    margin: 0 0 2.25rem 0;
+   position: relative;
+}
+
+#tote-bags {
+    scroll-margin-top: 100px;
 }
 
 .adventure-collection .container, .principles-collection .container, .rewind-collection .container, .mindset-collection .container, .principles-collection .container, .verb-collection .container, .tote-bag-collection .container {
@@ -1587,7 +1592,7 @@ h3.lookbook__title {
         gap: 2rem;
     }
 
-  .homepage-main .shirt-item:last-child, .adventure-main .shirt-item:last-child {
+  .homepage-main .shirt-item:last-child:not(.tote-bag-collection .shirt-item:last-child), .adventure-main .shirt-item:last-child {
         grid-column: 1 / 3;
         justify-self: center;
         width: 50%;
