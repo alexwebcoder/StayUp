@@ -292,6 +292,14 @@ a {
    position: relative;
 }
 
+.tote-bag-collection h1 {
+  background-color: #000;
+  color: #fff;
+  padding:.5rem 0;
+  margin-bottom: .5rem;
+  border-radius: 6px;
+}
+
 #tote-bags {
     scroll-margin-top: 100px;
 }
@@ -446,6 +454,7 @@ a {
   background: none;
   margin-bottom: 0;
   padding-top: 0;
+  padding-bottom: 0;
   overflow: visible;
 }
 
@@ -1613,6 +1622,11 @@ h3.lookbook__title {
 
   .collection-page .shop-btn-container+section {
         padding: 0;
+    }
+
+   .tote-bag-collection h1 {
+      width: 80%;
+      margin: 0 auto;
     }
 
   .shirt-item {
