@@ -168,7 +168,7 @@ a {
     justify-content: center;
     align-items: center;
     background: linear-gradient(90deg, rgba(255, 255, 255, 0)0%, #fff 100%);
-    cursor: pointer;t-Im
+    cursor: pointer;
     z-index: 9;
 }
 
@@ -278,6 +278,27 @@ a {
    font-size: 2rem;
 }
 
+.homepage-main .shop-btn-container.totes {
+  margin-bottom: 0;
+}
+
+.totes .shop-now-btn {
+  padding: 20px;
+  margin: 0;
+  font-size: 1.875rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.totes p {
+  margin: .5rem 0 1rem 0;
+}
+
+.totes .shop-now-btn:hover {
+  transform: none;
+}
+
 .rewind-main .shop-now-btn, .adventure-main .shop-now-btn, .mindset-main .shop-now-btn, .principles-main .shop-now-btn, .verb-main .shop-now-btn {
   margin-bottom: 0;
 }
@@ -376,7 +397,6 @@ a {
   top:0;
 }
 
-
 .shirt-item a:hover::after, .zoom-video a:hover::after {
   opacity: 1;
   transform: translateX(-50%) translateY(-12px);
@@ -405,7 +425,7 @@ a {
 }
 
 .collection-header + p {
-  padding-bottom: 1rem;
+  padding-bottom: .5rem;
 }
 
 .collection-link {
@@ -1510,10 +1530,18 @@ h3.lookbook__title {
         display: none;
     }
 
-  .shop-now-btn, .btn--secondary {
+  .shop-now-btn, .btn--secondary, .totes .shop-now-btn {
     padding: 12px 28px;
     font-size: 1.25rem;
     width: 90%;
+  }
+
+ .homepage-main .totes .shop-now-btn {
+   margin:0 auto;
+  }
+
+  .homepage-main .totes .shop-now-btn h2 {
+   font-size: 1.25rem;
   }
 
   .homepage-main .shop-now-btn {
