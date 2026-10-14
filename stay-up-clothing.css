@@ -335,6 +335,27 @@ a {
   margin: 2.5rem 0;
 }
 
+.shirt-item .buy-now-btn {
+  display: block;
+  width: fit-content;
+  margin: 1rem auto 0;
+  padding: 10px 24px;
+  background: #CC4000;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  border-radius: 6px;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.shirt-item .buy-now-btn:hover {
+  background: #993300;
+  transform: scale(1.05);
+}
+
 
 .collection-link-parent.last {
   margin-bottom: 1.5rem;
