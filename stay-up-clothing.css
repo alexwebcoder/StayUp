@@ -282,6 +282,11 @@ a {
    font-size: 2rem;
 }
 
+.shirt-item:target .shirt-link img {
+  outline: 4px solid #CC4000;
+  outline-offset: 4px;
+}
+
 .homepage-main .shop-btn-container.totes {
   margin-bottom: 0;
 }
@@ -1683,12 +1688,16 @@ h3.lookbook__title {
       margin: 0 auto;
     }
 
+    .tote-bag-collection {
+      margin-bottom: 1.5rem;
+    }
+
   .shirt-item {
         width: 80%;
         padding-top: calc(1600 / 2000 * 100%);
     }
 
-   .shirt-link {
+   .tote-bag-collection .shirt-link {
     display: block;
     position: static;
    }
