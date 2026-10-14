@@ -1688,6 +1688,20 @@ h3.lookbook__title {
         padding-top: calc(1600 / 2000 * 100%);
     }
 
+   .shirt-link {
+    display: block;
+    position: static;
+   }
+
+    .tote-bag-collection .shirt-item {
+      width: 90%;
+      padding-top: calc(6/2000* 100%);
+    }
+
+    .shirt-item .buy-now-btn {
+      margin: 1rem auto 0;
+    }
+
     .collection-link-parent {
       width: 80%;
       padding: .5rem;
