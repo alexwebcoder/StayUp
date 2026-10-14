@@ -321,9 +321,10 @@ a {
   border-radius: 6px;
 }
 
-#tote-bags {
+#tote-bags, #bigger-bag, #book-club, #frankly-my-dear, #ignoring-you, #prologue, #late-fee {
     scroll-margin-top: 100px;
 }
+
 
 .adventure-collection .container, .principles-collection .container, .rewind-collection .container, .mindset-collection .container, .principles-collection .container, .verb-collection .container, .tote-bag-collection .container {
   max-width: 1400px;
