@@ -1697,15 +1697,40 @@ h3.lookbook__title {
         padding-top: calc(1600 / 2000 * 100%);
     }
 
-   .tote-bag-collection .shirt-link {
+    .tote-bag-collection .shirt-link {
     display: block;
     position: static;
-   }
+    aspect-ratio: 1 / 1;
+    width: 100%;
+  }
 
     .tote-bag-collection .shirt-item {
-      width: 90%;
-      padding-top: calc(6/2000* 100%);
-    }
+    width: 90%;
+    padding-top: 0;
+    position: relative;
+  }
+
+.tote-bag-collection .shirt-link picture {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.tote-bag-collection .shirt-item img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: contain;
+}
+
+.tote-bag-collection .buy-now-btn {
+  display: block;
+  width: fit-content;
+  margin: 1rem auto 0;
+}
+
+
 
     .shirt-item .buy-now-btn {
       margin: 1rem auto 0;
