@@ -301,7 +301,8 @@ a {
 }
 
 .totes p {
-  margin: .5rem 0 1rem 0;
+  margin: .5rem auto 1rem auto;
+  width: 90%;
 }
 
 .totes .shop-now-btn:hover {
