@@ -1,112 +1,122 @@
-const slides = document.querySelector('.slides');
-const cards = document.querySelectorAll('.slides picture');
-const prev = document.querySelector('.prev');
-const next = document.querySelector('.next');
 
+// Initialize each slider independently
+document.querySelectorAll('.slider-wrapper').forEach((wrapper) => {
 
-// Determine how many shirts are visible
-function getVisibleCards() {
+    const slides = wrapper.querySelector('.slides');
+    const cards = wrapper.querySelectorAll('.slides picture');
+    const prev = wrapper.querySelector('.prev');
+    const next = wrapper.querySelector('.next');
 
-    if (window.innerWidth >= 1200) {
-        return 3;
+    // Make sure all slider elements exist
+    if (!slides || !cards.length || !prev || !next) {
+        return;
     }
 
-    if (window.innerWidth >= 768) {
-        return 2;
+    // Determine how many shirts are visible
+    function getVisibleCards() {
+
+        if (window.innerWidth >= 1200) {
+            return 3;
+        }
+
+        if (window.innerWidth >= 768) {
+            return 2;
+        }
+
+        return 1;
     }
 
-    return 1;
-}
+    // Calculate how far to scroll
+    function getScrollAmount() {
 
+        const card = cards[0];
+        const cardWidth = card.getBoundingClientRect().width;
 
-// Calculate how far to scroll
-function getScrollAmount() {
-
-    const card = cards[0];
-    const cardWidth = card.getBoundingClientRect().width;
-
-    return cardWidth * getVisibleCards();
-
-}
-
-
-// Next button
-next.addEventListener('click', () => {
-
-    const maxScroll = slides.scrollWidth - slides.clientWidth;
-
-    if (slides.scrollLeft >= maxScroll - 5) {
-
-        slides.scrollTo({
-            left: 0,
-            behavior: 'smooth'
-        });
-
-    } else {
-
-        slides.scrollBy({
-            left: getScrollAmount(),
-            behavior: 'smooth'
-        });
+        return cardWidth * getVisibleCards();
 
     }
 
-});
+    // Next button
+    next.addEventListener('click', () => {
 
+        const maxScroll = slides.scrollWidth - slides.clientWidth;
 
-// Previous button
-prev.addEventListener('click', () => {
+        if (slides.scrollLeft >= maxScroll - 5) {
 
-    if (slides.scrollLeft <= 5) {
+            slides.scrollTo({
+                left: 0,
+                behavior: 'smooth'
+            });
 
-        slides.scrollTo({
-            left: slides.scrollWidth,
-            behavior: 'smooth'
-        });
+        } else {
 
-    } else {
-
-        slides.scrollBy({
-            left: -getScrollAmount(),
-            behavior: 'smooth'
-        });
-
-    }
-
-});
-
-
-// One-time carousel nudge
-const observer = new IntersectionObserver((entries) => {
-
-    entries.forEach(entry => {
-
-        if (entry.isIntersecting) {
-            setTimeout(() => {
-                slides.scrollBy({
-                    left: 60,
-                    behavior: 'smooth'
-                });
-
-                setTimeout(() => {
-
-                    slides.scrollBy({
-                        left: -60,
-                        behavior: 'smooth'
-                    });
-
-                }, 800);
-
-            }, 300);
-
-            observer.disconnect(); // only run once
+            slides.scrollBy({
+                left: getScrollAmount(),
+                behavior: 'smooth'
+            });
 
         }
 
     });
 
-}, {
-    threshold: 0.5
-});
+    // Previous button
+    prev.addEventListener('click', () => {
 
-observer.observe(slides);
+        const maxScroll = slides.scrollWidth - slides.clientWidth;
+
+        if (slides.scrollLeft <= 5) {
+
+            slides.scrollTo({
+                left: maxScroll,
+                behavior: 'smooth'
+            });
+
+        } else {
+
+            slides.scrollBy({
+                left: -getScrollAmount(),
+                behavior: 'smooth'
+            });
+
+        }
+
+    });
+
+    // One-time carousel nudge
+    const observer = new IntersectionObserver((entries) => {
+
+        entries.forEach(entry => {
+
+            if (entry.isIntersecting) {
+
+                setTimeout(() => {
+
+                    slides.scrollBy({
+                        left: 60,
+                        behavior: 'smooth'
+                    });
+
+                    setTimeout(() => {
+
+                        slides.scrollBy({
+                            left: -60,
+                            behavior: 'smooth'
+                        });
+
+                    }, 800);
+
+                }, 300);
+
+                observer.disconnect();
+
+            }
+
+        });
+
+    }, {
+        threshold: 0.5
+    });
+
+    observer.observe(slides);
+
+});
